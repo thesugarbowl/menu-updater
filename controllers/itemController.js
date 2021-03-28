@@ -308,7 +308,7 @@ exports.index = function(req, res, next) {
 
 // Display update form on GET
 exports.item_update_get = function(req, res) {
-    res.render('update', {title: 'Menu Update'});
+    res.render('update', {title: 'Sugarbowl Menu Update'});
 };
 
 // Handle update on POST
