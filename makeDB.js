@@ -446,7 +446,10 @@ function createItems(cb) {
             itemCreate('Soup Of The Day', false, 'Food', ['Lunch & Dinner'], '', '', false, false, false, '', callback);
         },
         function(callback) {
-          itemCreate('Lunch Feature', false, 'Food', ['Lunch & Dinner'], '', false, false, false, false, '', callback);
+          itemCreate('Lunch Feature #1', false, 'Food', ['Lunch & Dinner'], '', false, false, false, false, '', callback);
+        },
+        function(callback) {
+          itemCreate('Lunch Feature #2', false, 'Food', ['Lunch & Dinner'], '', false, false, false, false, '', callback);
         },
         function(callback) {
           itemCreate('Dinner Feature #1', false, 'Food', ['Lunch & Dinner'], '', false, false, false, false, '', callback);
