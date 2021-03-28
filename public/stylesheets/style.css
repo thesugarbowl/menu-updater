@@ -1,0 +1,87 @@
+.content {
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+#bannerSugarbowl {
+  width: 100%;
+}
+
+#bannerBeverages {
+  background-image: url("../images/beverages.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+#bannerFood {
+  background-image: url("../images/food.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+#bannerOffsales {
+  background-image: url("../images/offsales.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.accordion-button {
+  display:block;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#leaf {
+  height: 25px;
+  width: 25px;
+}
+
+#foodImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.left-align {
+  text-align:left;
+}
+
+#update-page {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.updateText {
+  display: inline-block;
+}
+
+ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.availability {
+  display: inline;
+  margin-left: 6px;
+  color: #e60000;
+  font-weight: bold;
+}
