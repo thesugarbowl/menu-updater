@@ -79,6 +79,10 @@ ol {
   display: inline-block;
 }
 
+.inlineButton {
+  display: inline;
+}
+
 .availability {
   display: inline;
   margin-left: 6px;

@@ -20,6 +20,12 @@ router.get('/gravlaxisnotalaxative/allavailable', item_controller.all_available_
 // POST request for make all food available
 router.post('/gravlaxisnotalaxative/allavailable', item_controller.all_available_post);
 
+// GET request for make breakfast unavailable
+router.get('/gravlaxisnotalaxative/breakfastunavailable', item_controller.breakfast_unavailable_get);
+
+// POST request for make breakfast unavailable
+router.post('/gravlaxisnotalaxative/breakfastunavailable', item_controller.breakfast_unavailable_post);
+
 // GET request for showing item details
 router.get('/item/:id', item_controller.item_details_get);
 

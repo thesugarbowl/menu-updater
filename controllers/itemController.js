@@ -414,3 +414,23 @@ exports.all_available_post = function(req, res) {
         );
     }
 };
+
+// Make breakfast unavailable GET
+exports.breakfast_unavailable_get = function(req, res) {
+    res.render('breakfast_unavailable');
+}
+
+// Make breakfast unavailable POST
+exports.breakfast_unavailable_post = function(req, res) {
+    if (req.body.breakfast_unavailable == 'true') {
+
+        Item.updateMany({subcategory: 'Breakfast', name: {$ne: "Cinnamon Bun"}}, {availability: "Unavailable"}, {new: true},
+            function (err, results) {
+                if (err) {return next(err);}
+                else {
+                    res.redirect('/menu/gravlaxisnotalaxative/update');
+                }
+            }
+        );
+    }
+};
