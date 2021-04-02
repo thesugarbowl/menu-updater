@@ -6,7 +6,7 @@ async function main() {
      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
      * See https://docs.mongodb.com/drivers/node/ for more details
      */
-    const uri = "mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-prod?retryWrites=true&w=majority";
+    const uri = "mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-dev?retryWrites=true&w=majority";
     
     /**
      * The Mongo Client you will use to interact with your database
