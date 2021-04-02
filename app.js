@@ -37,7 +37,7 @@ app.use('/menu', itemsRouter); // Add item routes to middleware chain
 var mongoose = require('mongoose');
 
 // Set up default mongoose connection
-var dev_db_url = 'mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-dev?retryWrites=true&w=majority';
+var dev_db_url = 'mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-prod?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, {useNewUrlParser:true, useUnifiedTopology:true});
 

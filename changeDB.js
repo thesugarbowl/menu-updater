@@ -6,7 +6,7 @@ async function main() {
      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
      * See https://docs.mongodb.com/drivers/node/ for more details
      */
-    const uri = "mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-dev?retryWrites=true&w=majority";
+    const uri = "mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-prod?retryWrites=true&w=majority";
     
     /**
      * The Mongo Client you will use to interact with your database
@@ -22,11 +22,11 @@ async function main() {
 
         // UPDATE
         // Print the Infinite Views listing
-        await findItemByName(client, "Omelette");
+        await findItemByName(client, "Burrito");
         // // Update the Infinite Views listing to have 6 bedrooms and 8 beds
-        await updateItemByName(client, "Omelette", { subcategory: ['Breakfast'] });
+        await updateItemByName(client, "Burrito", { subcategory: ['Breakfast'] });
         // // Print the updated Infinite Views listing
-        await findItemByName(client, "Omelette");
+        await findItemByName(client, "Burrito");
 
     } finally {
         // Close the connection to the MongoDB cluster
