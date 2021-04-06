@@ -350,8 +350,8 @@ exports.item_details_post = [
     // Validate and sanitize fields
     body('name_feature').trim(),
     body('availability').escape(),
-    body('price_reg').trim().escape(),
-    body('price_large').trim().escape(),
+    body('price_reg').trim(),
+    body('price_large').trim(),
     body('description').trim(),
     body('diet').escape(),
 
