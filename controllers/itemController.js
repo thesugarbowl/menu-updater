@@ -383,7 +383,12 @@ exports.item_details_post = [
             // Data from form is valid. Update the record.
             Item.findByIdAndUpdate(req.params.id, item, {new:true}, function (err, item) {
                 if (err) { return next(err); }
-                // Successful - redirect to menu update page
+                // Successful
+                // Recreate 'Breakfast' subcategory for dynamic menu items
+                Item.updateMany({name: {$in: ["Brunch Feature", "Breakfast Sandwich", "Burrito", "Omelette"]}}, {subcategory: "Breakfast"}, {new: true}, function (err, item) {
+                    if (err) {return next(err); }
+                });
+                // redirect to menu update page
                 res.redirect('/menu/item/' + item._id + '/confirmed');
             });
         }   
@@ -424,7 +429,7 @@ exports.breakfast_unavailable_get = function(req, res) {
 exports.breakfast_unavailable_post = function(req, res) {
     if (req.body.breakfast_unavailable == 'true') {
 
-        Item.updateMany({subcategory: 'Breakfast', name: {$ne: "Cinnamon Bun"}, name: {$ne: "Chicken And Waffles"}}, {availability: "Unavailable"}, {new: true},
+        Item.updateMany({subcategory: 'Breakfast', name: {$nin: ["Cinnamon Bun", "Chicken And Waffles"]}}, {availability: "Unavailable"}, {new: true},
             function (err, results) {
                 if (err) {return next(err);}
                 else {
