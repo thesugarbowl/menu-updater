@@ -121,6 +121,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Lindemans Oude Gueuze Cuvée René Lambic', false, 'Beverages', ['Beer/Cider'], '13', false, false, '5.5%', false, '', callback);
         // },
+        function(callback) {
+          itemCreate('Orval Trappist Ale', false, 'Beverages', ['Beer/Cider'], '13', false, false, '6.9%', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('Rochefort 6', false, 'Beverages', ['Beer/Cider'], '11', false, false, '330 mL / 7.5%', false, '', callback);
         // },
@@ -445,9 +448,9 @@ function createItems(cb) {
         // function(callback) {
         //     itemCreate('Soup Of The Day', false, 'Food', ['Lunch & Dinner'], '', '', false, false, false, '', callback);
         // },
-        function(callback) {
-          itemCreate('Brunch Feature', false, 'Food', ['Breakfast'], '', false, false, false, false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('Brunch Feature', false, 'Food', ['Breakfast'], '', false, false, false, false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Lunch Feature #1', false, 'Food', ['Lunch & Dinner'], '', false, false, false, false, '', callback);
         // },
