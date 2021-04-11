@@ -4,6 +4,22 @@
   overflow-x: hidden;
 }
 
+#navbar-mainsite {
+  position: relative;
+  top: 5%;
+}
+
+#navbar-nav-mainsite {
+  color: white;
+  opacity: 1;
+  text-align: justify;
+}
+
+#nav-link-mainsite {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
 #bannerSugarbowl {
   width: 100%;
 }

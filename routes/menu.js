@@ -8,6 +8,9 @@ var item_controller = require('../controllers/itemController');
 // GET menu home page
 router.get('/', item_controller.index);
 
+// GET menu for main site
+router.get('/mainsite', item_controller.mainsite_get);
+
 // GET request for updating an item
 router.get('/gravlaxisnotalaxative/update', item_controller.item_update_get);
 
