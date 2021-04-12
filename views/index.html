@@ -1533,15 +1533,82 @@
                           <td>5</td>
                         </tr>
                         <tr>
-                          <td><strong>Almond Spread With Pita Bread</strong><b style="color:#C63CFF;">V</b><p class="availability">{{almond.availability}}</p><br>Almonds, jalapeños, garlic, and grapeseed oil</td>
+                          <td>
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalAlmond">
+                              <strong>Almond Spread With Pita Bread </strong>
+                            </button>
+                            
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalAlmond" tabindex="-1" aria-labelledby="modalLabelAlmond" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100" id="modalLabelAlmond">Almond Spread With Pita</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="/images/almond_spread.jpeg" id="foodImage" alt="Almond Spread With Pita">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <b style="color:#C63CFF;">V</b><p class="availability">{{almond.availability}}</p><br>Almonds, jalapeños, garlic, and grapeseed oil</td>
                           <td>16</td>
                         </tr>
                         <tr>
-                          <td><strong>Pommes Frites</strong> <b style="color:#C63CFF;">V</b><p class="availability">{{pommes.availability}}</p><br>With chipotle mayo and ketchup</td>
+                          <td>
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalPommes">
+                              <strong>Pommes Frites </strong>
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalPommes" tabindex="-1" aria-labelledby="modalLabelPommes" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100" id="modalLabelPommes">Pommes Frites</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="/images/fries.jpeg" id="foodImage" alt="Pommes Frites">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <b style="color:#C63CFF;">V</b><p class="availability">{{pommes.availability}}</p><br>With chipotle mayo and ketchup</td>
                           <td>6 / 9</td>
                         </tr>
                         <tr>
-                          <td><strong>Yam Fries</strong> <b style="color:#C63CFF;">V</b><p class="availability">{{yam.availability}}</p><br>With chipotle mayo and ketchup</td>
+                          <td>
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalYam">
+                              <strong>Yam Fries </strong>
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalYam" tabindex="-1" aria-labelledby="modalLabelYam" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100" id="modalLabelYam">Yam Fries</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="/images/yam_fries.jpeg" id="foodImage" alt="Yam Fries">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <b style="color:#C63CFF;">V</b><p class="availability">{{yam.availability}}</p><br>With chipotle mayo and ketchup</td>
                           <td>8</td>
                         </tr>
                         <tr>
@@ -1661,7 +1728,29 @@
                         <td>19</td>
                       </tr>
                       <tr>
-                        <td><strong>Beef Burger</strong><p class="availability">{{beef.availability}}</p><br>Beef patty, Gruyère cheese, red onion, lettuce, tomato, pickles, honey dill mayo, on house-made brioche bun, with choice of side</td>
+                        <td>
+                          
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalBeef">
+                            <strong>Beef Burger</strong>
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalBeef" tabindex="-1" aria-labelledby="modalLabelBeef" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header text-center">
+                                  <h4 class="modal-title w-100" id="modalLabelBeef">Beef Burger</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="/images/beef_burger.jpeg" id="foodImage" alt="Beef Burger">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <p class="availability">{{beef.availability}}</p><br>Beef patty, Gruyère cheese, red onion, lettuce, tomato, pickles, honey dill mayo, on house-made brioche bun, with choice of side</td>
                         <td>18</td>
                       </tr>
                       <tr>
@@ -1694,30 +1783,26 @@
                         <td>
                           
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalPork">
-                            <strong>Pulled Pork Sandwich</strong>
+                          <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalJerk">
+                            <strong>Jerk Chicken Sandwich</strong>
                           </button>
                           
                           <!-- Modal -->
-                          <div class="modal fade" id="modalPork" tabindex="-1" aria-labelledby="modalLabelPork" aria-hidden="true">
+                          <div class="modal fade" id="modalJerk" tabindex="-1" aria-labelledby="modalLabelJerk" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                               <div class="modal-content">
                                 <div class="modal-header text-center">
-                                  <h4 class="modal-title w-100" id="modalLabelPork">Pulled Pork Sandwich</h5>
+                                  <h4 class="modal-title w-100" id="modalLabelJerk">Jerk Chicken Sandwich</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  <img src="/images/pulledPork.jpg" id="foodImage" alt="Pulled Pork Sandwich">
+                                  <img src="/images/jerk_chicken.jpeg" id="foodImage" alt="Jerk Chicken Sandwich">
                                 </div>
                               </div>
                             </div>
                           </div>
                           
-                          <p class="availability">{{pork.availability}}</p><br>Pulled pork, slaw (cabbage, carrot, and apple), house BBQ sauce, chipotle mayo, on house-made brioche bun, with choice of side</td>
-                        <td>18</td>
-                      </tr>
-                      <tr>
-                        <td><strong>Jerk Chicken Sandwich</strong><p class="availability">{{jerk.availability}}</p><br>Jerk chicken breast, red onion, lettuce, tomato, pickles, avocado mayo, on house-made brioche bun, with choice of side</td>
+                          <p class="availability">{{jerk.availability}}</p><br>Jerk chicken breast, red onion, lettuce, tomato, pickles, avocado mayo, on house-made brioche bun, with choice of side</td>
                         <td>17</td>
                       </tr>
                       <tr>
@@ -1851,7 +1936,28 @@
                         <tbody>
                           <tr>
                             <td>
-                              <b>Dessert Feature: {{dessert_feature.name_feature}}</b><p class="availability">{{dessert_feature.availability}}</p><br>{{dessert_feature.description}}
+
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalDessert">
+                                <strong>Dessert Feature: {{dessert_feature.name_feature}}</strong>
+                              </button>
+                              
+                              <!-- Modal -->
+                              <div class="modal fade" id="modalDessert" tabindex="-1" aria-labelledby="modalLabelDessert" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                      <h4 class="modal-title w-100" id="modalLabelDessert">{{dessert_feature.name_feature}}</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="/images/breadPudding_1.jpeg" id="foodImage" alt="Dessert Feature">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <p class="availability">{{dessert_feature.availability}}</p><br>{{dessert_feature.description}}
                             </td>
                             <td>{{dessert_feature.price_reg}}</td>
                           </tr>
@@ -1872,7 +1978,7 @@
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="/images/cheesecake.jpg" id="foodImage" alt="Cheesecake Of The Day">
+                                      <img src="/images/cheesecake.jpeg" id="foodImage" alt="Cheesecake Of The Day">
                                     </div>
                                   </div>
                                 </div>
@@ -1898,7 +2004,7 @@
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="/images/bananaCream.jpg" id="foodImage" alt="Banana Cream Pie">
+                                      <img src="/images/bananaCreamPie.jpeg" id="foodImage" alt="Banana Cream Pie">
                                     </div>
                                   </div>
                                 </div>
