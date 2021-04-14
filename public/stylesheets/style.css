@@ -105,3 +105,9 @@ ol {
   color: #e60000;
   font-weight: bold;
 }
+
+@media (max-width:991px) {
+  #sugarbowl-logo {
+    width:150px;
+  }
+}
