@@ -90,7 +90,7 @@ function createItems(cb) {
         },
         function(callback) {
           itemCreate('Sourwood Semitone', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / 6% / Gluten-Free / Halifax, Nova Scotia / Cider aged on 2nd-use blueberries (5 months skin contact). Wine-like acidity, tight, sharp, experimental. Notes of berries on the nose, semi-funky, unfiltered, and wild.', false, '', callback);
-        }
+        },
         // function(callback) {
         //   itemCreate('DDC Aphrodisiaque Strong Stout', false, 'Beverages', ['Beer/Cider'], '8', false, false, 'Quebec / 341 mL / 6.5%', false, '', callback);
         // },
@@ -448,6 +448,18 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("French Toast", false, 'Food', ['Breakfast'], '16', false, false, 'Slices of house-made brioche or cinnamon bun with icing sugar, berry compote (blueberry, raspberry, and strawberry), and side crème fraîche', ['Vegetarian'], '', callback);
         // },
+        function(callback) {
+          itemCreate("The Sugar Griddle", false, 'Food', ['Breakfast', 'Lunch & Dinner'], '10', false, false, 'Half waffle with a fried egg, 2 pieces of Four Whistle Farms back bacon, provolone cheese, and maple butter.', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Chicken Waffle Sandwich", false, 'Food', ['Breakfast', 'Lunch & Dinner'], '15', false, false, 'Full waffle folded over with a piece of chicken, maple butter, and watermelon salsa', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Chicken Salad Sandwich", false, 'Food', ['Lunch & Dinner'], '14', false, false, '6 oz shredded rotisserie chicken from La Petite Iza tossed in a house celery mayo dressing with arugula and tomato on Eleanor & Laurent sourdough bread.', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("The Heady Vegetarian", false, 'Food', ['Lunch & Dinner'], '13', false, false, 'Pan-seared tofu and Eleanor & Laurent sourdough bread with our house almond spread, Dijon, tabasco lime honey, tomato, arugula, and red onion.', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('Smoked Paprika Popcorn', false, 'Food', ['Lunch & Dinner'], '5', false, false, false, ['Vegan'], '', callback);
         // },

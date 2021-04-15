@@ -71,6 +71,14 @@
               </h2>
               <div id="collapseBeerCider" class="accordion-collapse collapse" aria-labelledby="beerCider" data-bs-parent="#accordionBeverages">
                 <div class="accordion-body">
+
+                    <table class="center mb-4" style="width:90%;">
+                      <tbody>
+                        <tr>
+                          <td><b>Gluten-Free</b> <b style="color:#B9770E;">GF</b></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   
                     <table class="table table-striped" style="text-align:left;">
                         <tbody>
@@ -104,7 +112,7 @@
                             <td>8</td>
                           </tr>
                           <tr>
-                            <td><strong>Mongozo GF Pilsner</strong><p class="availability">{{mongoz.availability}}</p><br>Belgium / 330 mL / 5%</td>
+                            <td><strong>Mongozo Premium Pilsner </strong><b style="color:#B9770E;">GF </b><p class="availability">{{mongoz.availability}}</p><br>Belgium / 330 mL / 5%</td>
                             <td>8</td>
                           </tr>
                           <tr>
@@ -214,8 +222,8 @@
 
                               <!-- Button trigger modal -->
                               <button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#modalCiders">
-                              <strong>Ciders</strong>
-                              </button>
+                              <strong>Ciders</strong> 
+                              </button> (all are <b style="color:#B9770E;">GF</b>)
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="modalCiders" tabindex="-1" aria-labelledby="modalLabelCiders" aria-hidden="true">
@@ -230,27 +238,27 @@
                                         <table class="table table-striped" style="text-align:left;">
                                           <tbody>
                                             <tr>
-                                              <td><strong>Collective Arts (Apple<p class="availability">{{ca_app.availability}}</p>/Apple-Cherry<p class="availability">{{ca_appcherr.availability}}</p>) Cider</strong><br>473 mL / 5.8% / Gluten-Free / Ontario</td>
+                                              <td><strong>Collective Arts (Apple<p class="availability">{{ca_app.availability}}</p>/Apple-Cherry<p class="availability">{{ca_appcherr.availability}}</p>) Cider</strong><br>Ontario / 473 mL / 5.8%</td>
                                               <td>9</td>
                                             </tr>
                                             <tr>
-                                              <td><strong>Revel Cider Prosthetic Conscience</strong><p class="availability">{{prosthetic.availability}}</p><br>330 mL / 5.5% / Gluten-Free / Niagara, Ontario / Unfiltered pear, hibiscus, brettanomyces. Dry, funky, fruity pear notes infused with tart floral hibiscus. Light red fruit in colour, dry, and wacky. Farmhouse cider.</td>
+                                              <td><strong>Revel Cider Prosthetic Conscience</strong><p class="availability">{{prosthetic.availability}}</p><br>Ontario / 330 mL / 5.5% / Unfiltered pear, hibiscus, brettanomyces. Dry, funky, fruity pear notes infused with tart floral hibiscus. Light red fruit in colour, dry, and wacky. Farmhouse cider.</td>
                                               <td>9.25</td>
                                             </tr>
                                             <tr>
-                                              <td><strong>Revel Sonata Cherry Cider</strong><p class="availability">{{sonata.availability}}</p><br>355 mL / 6.5% / Gluten-Free / Niagara, Canada / Whole Montmorency cherries added (pits, skins, and stems). Almond, dark rapture, lovely, smooth and wacky unfiltered cider.</td>
+                                              <td><strong>Revel Sonata Cherry Cider</strong><p class="availability">{{sonata.availability}}</p><br>Ontario / 355 mL / 6.5% / Whole Montmorency cherries added (pits, skins, and stems). Almond, dark rapture, lovely, smooth and wacky unfiltered cider.</td>
                                               <td>10</td>
                                             </tr>
                                             <tr>
-                                              <td><strong>Sourwood Wabamo Dry Hopped Cider</strong><p class="availability">{{wabamo.availability}}</p><br>473 mL / 6% / Gluten-Free / Halifax, Nova Scotia / A dry cider, dry-hopped. Just apple and hops. Like an IPA but for people for like cider. A cider that likes to party.</td>
+                                              <td><strong>Sourwood Wabamo Dry Hopped Cider</strong><p class="availability">{{wabamo.availability}}</p><br>Nova Scotia / 473 mL / 6% / A dry cider, dry-hopped. Just apple and hops. Like an IPA but for people who like cider.</td>
                                               <td>10</td>
                                             </tr>
                                             <tr>
-                                              <td><strong>Sourwood Plumbum</strong><p class="availability">{{plumbum.availability}}</p><br>330 mL / 6.1% / Gluten-Free / Halifax, Nova Scotia / Spontaneously fermented northern spy (barrel-aged). Then aged on Nova Scotia damson plums (6 months fruit contact) and conditioned with apple juice. Sourwood makes ciders taste like lambic-style beer. Extremely dry, esters, tight acidity, puckering, and sharp. Ciders that can penetrate meat and cheese, or refresh the dead.</td>
+                                              <td><strong>Sourwood Plumbum</strong><p class="availability">{{plumbum.availability}}</p><br>Nova Scotia / 330 mL / 6.1% / Spontaneously fermented Northern Spy apples (barrel-aged). Then aged on Nova Scotia damson plums (6 months fruit contact) and conditioned with apple juice. Sourwood makes ciders taste like lambic-style beer. Extremely dry, esters, tight acidity, puckering, and sharp.</td>
                                               <td>12</td>
                                             </tr>
                                             <tr>
-                                              <td><strong>Sourwood Semitone</strong><p class="availability">{{semitone.availability}}</p><br>330 mL / 6% / Gluten-Free / Halifax, Nova Scotia / Cider aged on 2nd-use blueberries (5 months skin contact). Wine-like acidity, tight, sharp, experimental. Notes of berries on the nose, semi-funky, unfiltered, and wild.</td>
+                                              <td><strong>Sourwood Semitone</strong><p class="availability">{{semitone.availability}}</p><br>Nova Scotia / 330 mL / 6% / Cider aged on second-use blueberries (5 months skin contact). Wine-like acidity, tight, sharp, experimental. Notes of berries on the nose, semi-funky, unfiltered, and wild.</td>
                                               <td>12</td>
                                             </tr>
                                           </tbody>
@@ -1315,8 +1323,38 @@
                         </tr>
                       </tbody>
                     </table>
+
+                    <table class="table table-striped mb-4" style="text-align:left;">
+                      <thead>
+                        <tr>
+                          <th colspan="2" style="text-align:center;"><h3>Take-Out Specials</h3>
+                            (Also available for dine-in)
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                              <strong>The Sugar Griddle </strong><p class='availability'>{{griddle.availability}}</p>
+                              <br>Half waffle with a fried egg, 2 pieces of Four Whistle Farms back bacon, provolone cheese, and maple butter.</td>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <strong>Chicken Waffle Sandwich </strong>(no side) <p class="availability">{{waffleSandwich.availability}}</p>
+                              <br>Full waffle folded over with a piece of chicken, maple butter, and watermelon salsa.</td>
+                          <td>15</td>
+                        </tr>
+                      </tbody>
+                  </table>
                   
                     <table class="table table-striped" style="text-align:left;">
+                      <thead>
+                        <tr>
+                          <th colspan="2" style="text-align:center;"><h3>Classics</h3>
+                          </th>
+                        </tr>
+                      </thead>
                       <tbody>
                         <tr>
                           <td>
@@ -1559,6 +1597,42 @@
                         </tr>
                       </tbody>
                     </table>
+
+                    <table class="table table-striped mb-4" style="text-align:left;">
+                      <thead>
+                        <tr>
+                          <th colspan="2" style="text-align:center;"><h3>Take-Out Specials</h3>
+                            (Also available for dine-in)
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                              <strong>The Sugar Griddle </strong><p class='availability'>{{griddle.availability}}</p>
+                              <br>Half waffle with a fried egg, 2 pieces of Four Whistle Farms back bacon, provolone cheese, and maple butter.</td>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <strong>Chicken Waffle Sandwich </strong>(no side) <p class="availability">{{waffleSandwich.availability}}</p>
+                              <br>Full waffle folded over with a piece of chicken, maple butter, and watermelon salsa.</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <strong>Chicken Salad Sandwich </strong>(no side) <p class="availability">{{chickenSalad.availability}}</p>
+                              <br>6 oz shredded rotisserie chicken from La Petite Iza tossed in a house celery mayo dressing with arugula and tomato on Eleanor & Laurent sourdough bread.</td>
+                          <td>14</td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <strong>The Heady Vegetarian </strong><p class="availability">{{heady.availability}}</p>
+                              <br>Pan-seared tofu and Eleanor & Laurent sourdough bread with our house almond spread, Dijon, tabasco lime honey, tomato, arugula, and red onion.</td>
+                          <td>13</td>
+                        </tr>
+                      </tbody>
+                  </table>
                     
                     <table class="table table-striped mb-4" style="text-align:left;">
                       <thead>
@@ -1693,7 +1767,7 @@
                             <div style="display: inline-block; text-align:left;">
                               <span style="display:block; font-weight:normal;">
                                 <ul>
-                                  <li><b>1 side (Fries<p class="availability">{{pommes.availability}}</p>/ Yam Fries (+1.50)<p class="availability">{{yam.availability}}</p>/ Caesar Salad<p class="availability">{{caesar_salad.availability}}</p>/ Soup: {{soup.name_feature}}<p class="availability">{{soup.availability}}</p>) is included with all burgers and sandwiches.</b></li>
+                                  <li><b>1 side (Fries<p class="availability">{{pommes.availability}}</p>/ Yam Fries (+1.50)<p class="availability">{{yam.availability}}</p>/ Caesar Salad<p class="availability">{{caesar_salad.availability}}</p>/ Soup: {{soup.name_feature}}<p class="availability">{{soup.availability}}</p>) is included with all burgers and sandwiches, unless specified.</b></li>
                                   <li><b>Gluten-free buns (+1.50 each) are available. Ask your server.</b></li>
                                 </ul>
                               </span>

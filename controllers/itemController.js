@@ -138,6 +138,10 @@ exports.index = function(req, res, next) {
         chickWaff: function(callback) {Item.findOne({name: "Chicken And Waffles"}).exec(callback)},
         veganSaus: function(callback) {Item.findOne({name: "Vegan Sausage And Tofu Scramble"}).exec(callback)},
         french: function(callback) {Item.findOne({name: "French Toast"}).exec(callback)},
+        griddle: function(callback) {Item.findOne({name: "The Sugar Griddle"}).exec(callback)},
+        waffleSandwich: function(callback) {Item.findOne({name: "Chicken Waffle Sandwich"}).exec(callback)},
+        chickenSalad: function(callback) {Item.findOne({name: "Chicken Salad Sandwich"}).exec(callback)},
+        heady: function(callback) {Item.findOne({name: "The Heady Vegetarian"}).exec(callback)},
         popcorn: function(callback) {Item.findOne({name: 'Smoked Paprika Popcorn'}).exec(callback)},
         almond: function(callback) {Item.findOne({name: 'Almond Spread With Pita Bread'}).exec(callback)},
         pommes: function(callback) {Item.findOne({name: 'Pommes Frites'}).exec(callback)},
@@ -296,6 +300,10 @@ exports.index = function(req, res, next) {
             chickWaff: items.chickWaff,
             veganSaus: items.veganSaus,
             french: items.french,
+            griddle: items.griddle,
+            waffleSandwich: items.waffleSandwich,
+            chickenSalad: items.chickenSalad,
+            heady: items.heady,
             popcorn: items.popcorn,
             almond: items.almond,
             pommes: items.pommes,
@@ -457,6 +465,10 @@ exports.mainsite_get = function(req, res, next) {
         chickWaff: function(callback) {Item.findOne({name: "Chicken And Waffles"}).exec(callback)},
         veganSaus: function(callback) {Item.findOne({name: "Vegan Sausage And Tofu Scramble"}).exec(callback)},
         french: function(callback) {Item.findOne({name: "French Toast"}).exec(callback)},
+        griddle: function(callback) {Item.findOne({name: "The Sugar Griddle"}).exec(callback)},
+        waffleSandwich: function(callback) {Item.findOne({name: "Chicken Waffle Sandwich"}).exec(callback)},
+        chickenSalad: function(callback) {Item.findOne({name: "Chicken Salad Sandwich"}).exec(callback)},
+        heady: function(callback) {Item.findOne({name: "The Heady Vegetarian"}).exec(callback)},
         popcorn: function(callback) {Item.findOne({name: 'Smoked Paprika Popcorn'}).exec(callback)},
         almond: function(callback) {Item.findOne({name: 'Almond Spread With Pita Bread'}).exec(callback)},
         pommes: function(callback) {Item.findOne({name: 'Pommes Frites'}).exec(callback)},
@@ -615,6 +627,10 @@ exports.mainsite_get = function(req, res, next) {
             chickWaff: items.chickWaff,
             veganSaus: items.veganSaus,
             french: items.french,
+            griddle: items.griddle,
+            waffleSandwich: items.waffleSandwich,
+            chickenSalad: items.chickenSalad,
+            heady: items.heady,
             popcorn: items.popcorn,
             almond: items.almond,
             pommes: items.pommes,
@@ -760,7 +776,7 @@ exports.breakfast_unavailable_get = function(req, res) {
 exports.breakfast_unavailable_post = function(req, res) {
     if (req.body.breakfast_unavailable == 'true') {
 
-        Item.updateMany({subcategory: 'Breakfast', name: {$nin: ["Cinnamon Bun", "Chicken And Waffles"]}}, {availability: "Unavailable"}, {new: true},
+        Item.updateMany({subcategory: 'Breakfast', name: {$nin: ["Cinnamon Bun", "Chicken And Waffles", "The Sugar Griddle", "Chicken Waffle Sandwich"]}}, {availability: "Unavailable"}, {new: true},
             function (err, results) {
                 if (err) {return next(err);}
                 else {
