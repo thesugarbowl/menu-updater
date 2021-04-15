@@ -458,7 +458,7 @@ function createItems(cb) {
           itemCreate("Chicken Salad Sandwich", false, 'Food', ['Lunch & Dinner'], '14', false, false, '6 oz shredded rotisserie chicken from La Petite Iza tossed in a house celery mayo dressing with arugula and tomato on Eleanor & Laurent sourdough bread.', false, '', callback);
         },
         function(callback) {
-          itemCreate("The Heady Vegetarian", false, 'Food', ['Lunch & Dinner'], '13', false, false, 'Pan-seared tofu and Eleanor & Laurent sourdough bread with our house almond spread, Dijon, tabasco lime honey, tomato, arugula, and red onion.', false, '', callback);
+          itemCreate("The Heady Vegetarian", false, 'Food', ['Lunch & Dinner'], '13', false, false, 'Pan-seared tofu and Eleanor & Laurent sourdough bread with our house almond spread, nutritional yeast, Dijon, tabasco lime honey, tomato, arugula, and red onion.', false, '', callback);
         }
         // function(callback) {
         //   itemCreate('Smoked Paprika Popcorn', false, 'Food', ['Lunch & Dinner'], '5', false, false, false, ['Vegan'], '', callback);
