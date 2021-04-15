@@ -76,6 +76,21 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Collective Arts Apple Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
         // },
+        function(callback) {
+          itemCreate('Revel Cider Prosthetic Conscience', false, 'Beverages', ['Beer/Cider'], '9.25', false, false, '330 mL / 5.5% / Gluten-Free / Niagara, Ontario / Unfiltered pear, hibiscus, brettanomyces. Dry, funky, fruity pear notes infused with tart floral hibiscus. Light red fruit in colour, dry, and wacky. Farmhouse cider.', false, '', callback);
+        },
+        function(callback) {
+          itemCreate('Revel Sonata Cherry Cider', false, 'Beverages', ['Beer/Cider'], '10', false, false, '355 mL / Niagara, Canada / Whole Montmorency cherries added (pits, skins, and stems). Almond, dark rapture, lovely, smooth and wacky unfiltered cider.', false, '', callback);
+        },
+        function(callback) {
+          itemCreate('Sourwood Wabamo Dry Hopped Cider', false, 'Beverages', ['Beer/Cider'], '10', false, false, '473 mL / 6% / Halifax, Nova Scotia / A dry cider, dry-hopped. Just apple and hops. Like an IPA but for people for like cider. A cider that likes to party.', false, '', callback);
+        },
+        function(callback) {
+          itemCreate('Sourwood Plumbum', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / Halifax, Nova Scotia / Spontaneously fermented northern spy (barrel-aged). Then aged on Nova Scotia damson plums (6 months fruit contact) and conditioned with apple juice. Sourwood makes ciders taste like lambic-style beer. Extremely dry, esters, tight acidity, puckering, and sharp. Ciders that can penetrate meat and cheese, or refresh the dead.', false, '', callback);
+        },
+        function(callback) {
+          itemCreate('Sourwood Semitone', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / 6% / Gluten-Free / Halifax, Nova Scotia / Cider aged on 2nd-use blueberries (5 months skin contact). Wine-like acidity, tight, sharp, experimental. Notes of berries on the nose, semi-funky, unfiltered, and wild.', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('DDC Aphrodisiaque Strong Stout', false, 'Beverages', ['Beer/Cider'], '8', false, false, 'Quebec / 341 mL / 6.5%', false, '', callback);
         // },
@@ -121,9 +136,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Lindemans Oude Gueuze Cuvée René Lambic', false, 'Beverages', ['Beer/Cider'], '13', false, false, '5.5%', false, '', callback);
         // },
-        function(callback) {
-          itemCreate('Orval Trappist Ale', false, 'Beverages', ['Beer/Cider'], '13', false, false, '6.9%', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('Orval Trappist Ale', false, 'Beverages', ['Beer/Cider'], '13', false, false, '6.9%', false, '', callback);
+        // }
         // function(callback) {
         //   itemCreate('Rochefort 6', false, 'Beverages', ['Beer/Cider'], '11', false, false, '330 mL / 7.5%', false, '', callback);
         // },
