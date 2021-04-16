@@ -76,21 +76,21 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Collective Arts Apple Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
         // },
-        function(callback) {
-          itemCreate('Revel Cider Prosthetic Conscience', false, 'Beverages', ['Beer/Cider'], '9.25', false, false, '330 mL / 5.5% / Gluten-Free / Niagara, Ontario / Unfiltered pear, hibiscus, brettanomyces. Dry, funky, fruity pear notes infused with tart floral hibiscus. Light red fruit in colour, dry, and wacky. Farmhouse cider.', false, '', callback);
-        },
-        function(callback) {
-          itemCreate('Revel Sonata Cherry Cider', false, 'Beverages', ['Beer/Cider'], '10', false, false, '355 mL / Niagara, Canada / Whole Montmorency cherries added (pits, skins, and stems). Almond, dark rapture, lovely, smooth and wacky unfiltered cider.', false, '', callback);
-        },
-        function(callback) {
-          itemCreate('Sourwood Wabamo Dry Hopped Cider', false, 'Beverages', ['Beer/Cider'], '10', false, false, '473 mL / 6% / Halifax, Nova Scotia / A dry cider, dry-hopped. Just apple and hops. Like an IPA but for people for like cider. A cider that likes to party.', false, '', callback);
-        },
-        function(callback) {
-          itemCreate('Sourwood Plumbum', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / Halifax, Nova Scotia / Spontaneously fermented northern spy (barrel-aged). Then aged on Nova Scotia damson plums (6 months fruit contact) and conditioned with apple juice. Sourwood makes ciders taste like lambic-style beer. Extremely dry, esters, tight acidity, puckering, and sharp. Ciders that can penetrate meat and cheese, or refresh the dead.', false, '', callback);
-        },
-        function(callback) {
-          itemCreate('Sourwood Semitone', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / 6% / Gluten-Free / Halifax, Nova Scotia / Cider aged on 2nd-use blueberries (5 months skin contact). Wine-like acidity, tight, sharp, experimental. Notes of berries on the nose, semi-funky, unfiltered, and wild.', false, '', callback);
-        },
+        // function(callback) {
+        //   itemCreate('Revel Cider Prosthetic Conscience', false, 'Beverages', ['Beer/Cider'], '9.25', false, false, '330 mL / 5.5% / Gluten-Free / Niagara, Ontario / Unfiltered pear, hibiscus, brettanomyces. Dry, funky, fruity pear notes infused with tart floral hibiscus. Light red fruit in colour, dry, and wacky. Farmhouse cider.', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate('Revel Sonata Cherry Cider', false, 'Beverages', ['Beer/Cider'], '10', false, false, '355 mL / Niagara, Canada / Whole Montmorency cherries added (pits, skins, and stems). Almond, dark rapture, lovely, smooth and wacky unfiltered cider.', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate('Sourwood Wabamo Dry Hopped Cider', false, 'Beverages', ['Beer/Cider'], '10', false, false, '473 mL / 6% / Halifax, Nova Scotia / A dry cider, dry-hopped. Just apple and hops. Like an IPA but for people for like cider. A cider that likes to party.', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate('Sourwood Plumbum', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / Halifax, Nova Scotia / Spontaneously fermented northern spy (barrel-aged). Then aged on Nova Scotia damson plums (6 months fruit contact) and conditioned with apple juice. Sourwood makes ciders taste like lambic-style beer. Extremely dry, esters, tight acidity, puckering, and sharp. Ciders that can penetrate meat and cheese, or refresh the dead.', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate('Sourwood Semitone', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / 6% / Gluten-Free / Halifax, Nova Scotia / Cider aged on 2nd-use blueberries (5 months skin contact). Wine-like acidity, tight, sharp, experimental. Notes of berries on the nose, semi-funky, unfiltered, and wild.', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('DDC Aphrodisiaque Strong Stout', false, 'Beverages', ['Beer/Cider'], '8', false, false, 'Quebec / 341 mL / 6.5%', false, '', callback);
         // },
@@ -448,17 +448,17 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("French Toast", false, 'Food', ['Breakfast'], '16', false, false, 'Slices of house-made brioche or cinnamon bun with icing sugar, berry compote (blueberry, raspberry, and strawberry), and side crème fraîche', ['Vegetarian'], '', callback);
         // },
+        // function(callback) {
+        //   itemCreate("The Sugar Griddle", false, 'Food', ['Breakfast', 'Lunch & Dinner'], '10', false, false, 'Half waffle with a fried egg, 2 pieces of Four Whistle Farms back bacon, provolone cheese, and maple butter.', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("Chicken Waffle Sandwich", false, 'Food', ['Breakfast', 'Lunch & Dinner'], '15', false, false, 'Full waffle folded over with a piece of chicken, maple butter, and watermelon salsa', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("Chicken Salad Sandwich", false, 'Food', ['Lunch & Dinner'], '14', false, false, '6 oz shredded rotisserie chicken from La Petite Iza tossed in a house celery mayo dressing with arugula and tomato on Eleanor & Laurent sourdough bread.', false, '', callback);
+        // },
         function(callback) {
-          itemCreate("The Sugar Griddle", false, 'Food', ['Breakfast', 'Lunch & Dinner'], '10', false, false, 'Half waffle with a fried egg, 2 pieces of Four Whistle Farms back bacon, provolone cheese, and maple butter.', false, '', callback);
-        },
-        function(callback) {
-          itemCreate("Chicken Waffle Sandwich", false, 'Food', ['Breakfast', 'Lunch & Dinner'], '15', false, false, 'Full waffle folded over with a piece of chicken, maple butter, and watermelon salsa', false, '', callback);
-        },
-        function(callback) {
-          itemCreate("Chicken Salad Sandwich", false, 'Food', ['Lunch & Dinner'], '14', false, false, '6 oz shredded rotisserie chicken from La Petite Iza tossed in a house celery mayo dressing with arugula and tomato on Eleanor & Laurent sourdough bread.', false, '', callback);
-        },
-        function(callback) {
-          itemCreate("The Heady Vegetarian", false, 'Food', ['Lunch & Dinner'], '13', false, false, 'Pan-seared tofu and Eleanor & Laurent sourdough bread with our house almond spread, nutritional yeast, Dijon, tabasco lime honey, tomato, arugula, and red onion.', false, '', callback);
+          itemCreate("The Heady Vegetarian Sandwich", false, 'Food', ['Lunch & Dinner'], '13', false, false, 'Pan-seared tofu and Eleanor & Laurent sourdough bread with our house almond spread, nutritional yeast, Dijon, tabasco lime honey, tomato, arugula, and red onion.', false, '', callback);
         }
         // function(callback) {
         //   itemCreate('Smoked Paprika Popcorn', false, 'Food', ['Lunch & Dinner'], '5', false, false, false, ['Vegan'], '', callback);
