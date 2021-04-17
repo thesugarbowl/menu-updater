@@ -58,6 +58,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Annex Force Majeure NE IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 6.9%', false, '', callback);
         // },
+        function(callback) {
+          itemCreate('The Dandy Brewing Company T2G IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 7.5%', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('Apex Predator Double IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Yellowhead County, AB / 473 mL / 8.2%', false, '', callback);
         // },
@@ -105,6 +108,9 @@ function createItems(cb) {
         // },
         // function(callback) {
         //   itemCreate('SYC Pontification Italian Pilsner', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Edmonton / 473 mL / 4.9%', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate('Annex Ale Project Good Authority Golden Ale', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 4.9%', false, '', callback);
         // },
         // function(callback) {
         //   itemCreate('Townsquare Forged Amber Rye Ale', false, 'Beverages', ['Beer/Cider'], '8.25', false, false, 'Edmonton / 473 mL / 5.2%', false, '', callback);
@@ -457,9 +463,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Chicken Salad Sandwich", false, 'Food', ['Lunch & Dinner'], '14', false, false, '6 oz shredded rotisserie chicken from La Petite Iza tossed in a house celery mayo dressing with arugula and tomato on Eleanor & Laurent sourdough bread.', false, '', callback);
         // },
-        function(callback) {
-          itemCreate("The Heady Vegetarian Sandwich", false, 'Food', ['Lunch & Dinner'], '13', false, false, 'Pan-seared tofu and Eleanor & Laurent sourdough bread with our house almond spread, nutritional yeast, Dijon, tabasco lime honey, tomato, arugula, and red onion.', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("The Heady Vegetarian Sandwich", false, 'Food', ['Lunch & Dinner'], '13', false, false, 'Pan-seared tofu and Eleanor & Laurent sourdough bread with our house almond spread, nutritional yeast, Dijon, tabasco lime honey, tomato, arugula, and red onion.', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Smoked Paprika Popcorn', false, 'Food', ['Lunch & Dinner'], '5', false, false, false, ['Vegan'], '', callback);
         // },
