@@ -6,7 +6,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var cons = require('consolidate');
 var compression = require('compression');
 
 var indexRouter = require('./routes/index');
@@ -16,9 +15,8 @@ var itemsRouter = require('./routes/menu'); // Import routes for 'menu' area of 
 var app = express();
 
 // view engine setup
-app.engine('html', cons.swig)
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 
 app.use(compression()); // Compress all routes
 

@@ -1,3 +1,4 @@
+/* Updater CSS */
 .content {
   width: 100%;
   margin: auto;
@@ -25,24 +26,71 @@
 }
 
 #bannerBeverages {
-  background-image: url("../images/beverages.jpg");
+  background-image: url('../images/beverages.jpg');
+  width: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
+  position: relative;
+}
+
+#bannerBeverages:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
 }
 
 #bannerFood {
-  background-image: url("../images/food.jpg");
+  background-image: url('../images/food.jpg');
+  width: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
+  position: relative;
+}
+
+#bannerFood:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
 }
 
 #bannerOffsales {
-  background-image: url("../images/offsales.jpg");
+  background-image: url('../images/offsales.jpg');
+  width: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
+  position: relative;
+}
+
+#bannerOffsales:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
+}
+
+.banner-text {
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.accordion {
+  width: 98%;
+  margin: auto;
 }
 
 .accordion-button {
@@ -109,5 +157,496 @@ ol {
 @media (max-width:991px) {
   #sugarbowl-logo {
     width:150px;
+  }
+}
+
+/* Mainsite CSS */
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+} */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  position: relative;
+  top: 5%;
+}
+
+.navbar-nav {
+  color: white;
+  text-align: justify;
+}
+
+.nav-link {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.sweetest-place {
+  background-image: url('../images/canopy.jpeg');
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sweetest-place:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.welcome {
+  background-image: url('../images/specials-wall.jpeg');
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.the-family {
+  background-image: url('../images/outside.jpeg');
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.the-family:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.about-us {
+  background-image: url('../images/cinnBun.jpeg');
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-us:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.lamb-burger {
+  background-image: url('../images/lamb-burger.jpeg');
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.lamb-burger:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.contact-us-banner {
+  background-image: url('../images/hummus-pita.jpeg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-us-banner:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.artwork-banner {
+  background-image: url('../images/wall_art_2_edited.jpg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.artwork-banner:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.history {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+#man-drinking-beer {
+  float: right;
+  max-width: 550px;
+}
+
+.belgian-beer {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+#belgian-beer {
+  max-width: 550px;
+}
+
+.contact-us {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.artist {
+  width: 95%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-paragraph {
+  font-size: 20px;
+
+}
+
+.hours-operation {
+  text-align: center;
+}
+
+.hours-operation-text {
+  margin: auto;
+  margin-bottom: 15px;
+  width: 75%;
+  padding: 10px;
+}
+
+.white-background-title {
+ color: rgb(45,45,45);
+}
+
+.white-background-paragraph {
+  font-size: 18px;
+  color: rgb(104,104,104);
+}
+
+a:link {
+  color: rgb(210,122,23);
+}
+
+a:hover {
+  color: rgb(236,198,156);
+}
+
+a:visited {
+  color: rgb(210,122,23);
+}
+
+.row {
+  display: flex;
+  margin: 80px 50px 10px 50px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.button {
+  background-color: rgb(35,35,35);
+  border: none;
+  color: white;
+  padding: 18px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.family-logo {
+  width: 70%;
+}
+
+.family-column {
+  float: left;
+  width: 33%;
+  padding: 15px;
+  text-align: center;
+}
+
+.family-row {
+  margin-bottom: 0px;
+}
+
+.family-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.family-description-photo {
+  width: 100%;
+}
+
+.family-photo-row {
+  display: flex;
+  margin: 50px 40px 100px 40px;
+}
+
+.family-photo-column {
+  width: 50%;
+  float: 50%;
+  padding: 10px;
+}
+
+.contact-us-column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.contact-us-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact-us {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+#mapid {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-mainsite {
+  background-color: rgb(53,46,41);
+  color: white;
+  padding: 10px 20px 90px 20px;
+}
+
+.footer-column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.footer-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tel {
+  color: white;
+}
+
+#mailto {
+  color: white;
+}
+
+#address {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    top: 0%;
+    background-color: rgb(53,46,41);
+  }
+  #sugarbowl-logo {
+    width: 150px;
+  }
+  #nav-link {
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .family-column {
+    width: 100%;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .contact-us-column {
+    width: 100%;
+  }
+  .top-banner-text {
+    margin-top: 130px;
+  }
+  .hero-text {
+    width: 90%;
+  }
+  .hours-operation-text {
+    width: 90%;
+  }
+  .the-family {
+    margin-bottom: 60px;
+  }
+  .family-description {
+    width: 100%;
+  }
+  .family-row {
+    width: 90%;
+    margin: auto;
+  }
+  .family-column {
+    width: 100%;
+  }
+  .about-us {
+    margin-bottom: 70px;
+  }
+  .history {
+    width: 100%;
+  }
+  .history-row {
+    width: 90%;
+    margin: auto;
+  }
+  .history-column {
+    width: 100%;
+  }
+  .lamb-burger {
+    margin-bottom: 70px;
+  }
+  .belgian-beer {
+    width: 100%;
+  }
+  .belgian-row {
+    width: 90%;
+    margin: auto;
+  }
+  .belgian-column {
+    width: 100%;
+  }
+  .contact-us-banner {
+    margin-bottom: 70px;
+  }
+  .contact-us {
+    width: 100%;
+  }
+  .contact-us-row {
+    width: 90%;
+    margin: auto;
+  }
+  .contact-us-column {
+    width: 100%;
+  }
+  .artist {
+    width: 100%;
+  }
+}
+
+#update-menu-button {
+  color: white;
+}
+
+@media (max-width:519px) {
+  #facebook {
+    margin-bottom:10px;
+  }
+  #twitter {
+    margin-bottom:10px;
+  }
+  #instagram {
+    margin-bottom:10px;
+  }
+  #yelp {
+    margin-bottom:10px;
+  }
+}
+
+@media (min-width: 601px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 990px) {
+  #nav-link {
+    font-weight: bold;
   }
 }

@@ -6,7 +6,7 @@ var item_controller = require('../controllers/itemController');
 
 // Item routes
 // GET menu home page
-router.get('/', item_controller.index);
+router.get('/', item_controller.menu);
 
 // GET menu for main site
 router.get('/mainsite', item_controller.mainsite_get);

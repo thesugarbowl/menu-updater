@@ -1,2 +1,3 @@
-# Sugarbowl Menu Updater
-Web app that displays and updates Sugarbowl's menu.
+# Sugarbowl Website
+
+Website for the restaurant Sugarbowl.

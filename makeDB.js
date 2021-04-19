@@ -49,18 +49,18 @@ function itemCreate(name, name_f, category, subcat, price_reg, price_l, price_b,
 
 function createItems(cb) {
     async.parallel([
-        // function(callback) {
-        //   itemCreate('Alleykat Aprikat Apricot Ale', false, 'Beverages', ['Beer/Cider'], '6.50', false, false, 'Edmonton / 355 mL / 5%', false, '', callback);
-        // },
+        function(callback) {
+          itemCreate('Alleykat Aprikat Apricot Ale', false, 'Beverages', ['Beer/Cider'], '6.50', false, false, 'Edmonton / 355 mL / 5%', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('Analog Hive Bomber Honey Wheat', false, 'Beverages', ['Beer/Cider'], '8.25', false, false, 'Edmonton / 473 mL / 4.3%', false, '', callback);
         // },
         // function(callback) {
         //   itemCreate('Annex Force Majeure NE IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 6.9%', false, '', callback);
         // },
-        function(callback) {
-          itemCreate('The Dandy Brewing Company T2G IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 7.5%', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('The Dandy Brewing Company T2G IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 7.5%', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Apex Predator Double IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Yellowhead County, AB / 473 mL / 8.2%', false, '', callback);
         // },
@@ -320,9 +320,6 @@ function createItems(cb) {
         //   itemCreate("Rum: El Dorado 12 yr", false, 'Beverages', ['Spirits'], '8', '12', false, false, false, '', callback);
         // },
         // function(callback) {
-        //   itemCreate("Rum: El Dorado 12 yr", false, 'Beverages', ['Spirits'], '8', '12', false, false, false, '', callback);
-        // },
-        // function(callback) {
         //   itemCreate("Rum: Blackpool Spiced", false, 'Beverages', ['Spirits'], '8', '12', false, false, false, '', callback);
         // },
         // function(callback) {
@@ -404,10 +401,10 @@ function createItems(cb) {
         //   itemCreate("S.Pellegrino: Pomegranate-Orange", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
         // },
         // function(callback) {
-        //   itemCreate("S.Pellegrino Mineral Water: 250 mL", false, 'Beverages', ['Coffee & Non-Alcoholic'], '2.50', false, false, '250 mL Bottle', false, '', callback);
+        //   itemCreate("S.Pellegrino Sparkling Mineral Water: 250 mL", false, 'Beverages', ['Coffee & Non-Alcoholic'], '2.50', false, false, '250 mL Bottle', false, '', callback);
         // },
         // function(callback) {
-        //   itemCreate("S.Pellegrino Mineral Water: 750 mL", false, 'Beverages', ['Coffee & Non-Alcoholic'], '5', false, false, '750 mL Bottle', false, '', callback);
+        //   itemCreate("S.Pellegrino Sparkling Mineral Water: 750 mL", false, 'Beverages', ['Coffee & Non-Alcoholic'], '5', false, false, '750 mL Bottle', false, '', callback);
         // },
         // function(callback) {
         //   itemCreate("Annex: Root Beer", false, 'Beverages', ['Coffee & Non-Alcoholic'], '5', false, false, false, false, '', callback);

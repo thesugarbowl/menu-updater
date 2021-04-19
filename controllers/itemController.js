@@ -4,7 +4,7 @@ const {body,validationResult} = require('express-validator');
 const item = require('../models/item');
 
 // Display menu
-exports.index = function(req, res, next) {
+exports.menu = function(req, res, next) {
     async.parallel({
         alleykat: function(callback) {Item.findOne({name: 'Alleykat Aprikat Apricot Ale'}).exec(callback)},
         analog: function(callback) {Item.findOne({name: 'Analog Hive Bomber Honey Wheat'}).exec(callback)},
@@ -92,9 +92,9 @@ exports.index = function(req, res, next) {
         roses: function(callback) {Item.findOne({name: "Bourbon: Four Roses"}).exec(callback)},
         dad: function(callback) {Item.findOne({name: "Bourbon: Old Grand Dad"}).exec(callback)},
         sazerac: function(callback) {Item.findOne({name: "Bourbon: Sazerac"}).exec(callback)},
-        dorado3: function(callback) {Item.findOne({name: "El Dorado 3yr"}).exec(callback)},
-        dorado12: function(callback) {Item.findOne({name: "El Dorado 12yr"}).exec(callback)},
-        blackpool: function(callback) {Item.findOne({name: "Blackpool Spiced"}).exec(callback)},
+        dorado3: function(callback) {Item.findOne({name: "Rum: El Dorado 3 yr"}).exec(callback)},
+        dorado12: function(callback) {Item.findOne({name: "Rum: El Dorado 12 yr"}).exec(callback)},
+        blackpool: function(callback) {Item.findOne({name: "Rum: Blackpool Spiced"}).exec(callback)},
         boulev: function(callback) {Item.findOne({name: "Boulevardier"}).exec(callback)},
         grandmoth: function(callback) {Item.findOne({name: "Grandmother's Purse"}).exec(callback)},
         horse: function(callback) {Item.findOne({name: "Horse With No Mane"}).exec(callback)},
@@ -167,7 +167,7 @@ exports.index = function(req, res, next) {
     }, function (err, items) {
         if (err) {return next(err);} // Error in API usage
         // Success, so render
-        res.render('index', {
+        res.render('menu', {
             alleykat: items.alleykat,
             analog: items.analog,
             annexgood: items.annexgood,
@@ -419,9 +419,9 @@ exports.mainsite_get = function(req, res, next) {
         roses: function(callback) {Item.findOne({name: "Bourbon: Four Roses"}).exec(callback)},
         dad: function(callback) {Item.findOne({name: "Bourbon: Old Grand Dad"}).exec(callback)},
         sazerac: function(callback) {Item.findOne({name: "Bourbon: Sazerac"}).exec(callback)},
-        dorado3: function(callback) {Item.findOne({name: "El Dorado 3yr"}).exec(callback)},
-        dorado12: function(callback) {Item.findOne({name: "El Dorado 12yr"}).exec(callback)},
-        blackpool: function(callback) {Item.findOne({name: "Blackpool Spiced"}).exec(callback)},
+        dorado3: function(callback) {Item.findOne({name: "Rum: El Dorado 3 yr"}).exec(callback)},
+        dorado12: function(callback) {Item.findOne({name: "Rum: El Dorado 12 yr"}).exec(callback)},
+        blackpool: function(callback) {Item.findOne({name: "Rum: Blackpool Spiced"}).exec(callback)},
         boulev: function(callback) {Item.findOne({name: "Boulevardier"}).exec(callback)},
         grandmoth: function(callback) {Item.findOne({name: "Grandmother's Purse"}).exec(callback)},
         horse: function(callback) {Item.findOne({name: "Horse With No Mane"}).exec(callback)},
