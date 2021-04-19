@@ -143,10 +143,6 @@ ol {
   display: inline-block;
 }
 
-.inlineButton {
-  display: inline;
-}
-
 .availability {
   display: inline;
   margin-left: 6px;
@@ -161,14 +157,6 @@ ol {
 }
 
 /* Mainsite CSS */
-/* body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-} */
 
 @font-face {
   font-family: 'Roboto';
@@ -618,6 +606,9 @@ a:visited {
   .artist {
     width: 100%;
   }
+  #update-page {
+    width: 95%;
+  }
 }
 
 #update-menu-button {
@@ -640,6 +631,9 @@ a:visited {
 }
 
 @media (min-width: 601px) {
+  #update-title {
+    font-size: 50px;
+  }
   h1 {
     font-size: 70px;
   }
