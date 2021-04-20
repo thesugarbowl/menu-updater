@@ -49,9 +49,9 @@ function itemCreate(name, name_f, category, subcat, price_reg, price_l, price_b,
 
 function createItems(cb) {
     async.parallel([
-        function(callback) {
-          itemCreate('Alleykat Aprikat Apricot Ale', false, 'Beverages', ['Beer/Cider'], '6.50', false, false, 'Edmonton / 355 mL / 5%', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('Alleykat Aprikat Apricot Ale', false, 'Beverages', ['Beer/Cider'], '6.50', false, false, 'Edmonton / 355 mL / 5%', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Analog Hive Bomber Honey Wheat', false, 'Beverages', ['Beer/Cider'], '8.25', false, false, 'Edmonton / 473 mL / 4.3%', false, '', callback);
         // },
@@ -181,6 +181,12 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Feature Draft #8', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
         // },
+        function(callback) {
+          itemCreate('Feature Draft #9', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
+        },
+        function(callback) {
+          itemCreate('Feature Draft #10', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
+        },
         // function(callback) {
         //   itemCreate('Feature Bottle/Can #1', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
         // },
@@ -205,6 +211,12 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Feature Bottle/Can #8', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
         // },
+        function(callback) {
+          itemCreate('Feature Bottle/Can #9', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
+        },
+        function(callback) {
+          itemCreate('Feature Bottle/Can #10', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("Clos du Soleil Célestiale . Meritage '16", false, 'Beverages', ['Wine'], '14', '19', '52', 'Similkameen Valley, BC', false, '', callback);
         // },

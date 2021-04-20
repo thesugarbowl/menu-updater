@@ -260,6 +260,14 @@
               <div id="collapseTapsFeatureBottles" class="accordion-collapse collapse" aria-labelledby="tapsFeatureBottles" data-bs-parent="#accordionBeverages">
                 <div class="accordion-body">
 
+                  <table class="center mb-4" style="width:90%;">
+                    <tbody>
+                      <tr>
+                        <td colspan="2" style="text-align: center;"><b>Gluten-Free</b> <b style="color:#B9770E;">GF</b></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
                   <table class="table table-striped" style="text-align:left;">
                     <thead>
                       <tr>
@@ -313,6 +321,18 @@
                       <tr>
                         <td><strong style="margin-right:5px;"><%= draft8.name_feature %></strong><% if (draft8.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %><p class="availability"><%= draft8.availability %></p><br><%= draft8.description %></td>
                         <td><%= draft8.price_reg %></td>
+                      </tr>
+                      <% } %>
+                      <% if (draft9.availability == '') { %>
+                      <tr>
+                        <td><strong style="margin-right:5px;"><%= draft9.name_feature %></strong><% if (draft9.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %><p class="availability"><%= draft9.availability %></p><br><%= draft9.description %></td>
+                        <td><%= draft9.price_reg %></td>
+                      </tr>
+                      <% } %>
+                      <% if (draft10.availability == '') { %>
+                      <tr>
+                        <td><strong style="margin-right:5px;"><%= draft10.name_feature %></strong><% if (draft10.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %><p class="availability"><%= draft10.availability %></p><br><%= draft10.description %></td>
+                        <td><%= draft10.price_reg %></td>
                       </tr>
                       <% } %>
                     </tbody>
@@ -371,6 +391,18 @@
                       <tr>
                         <td><strong style="margin-right:5px;"><%= bott8.name_feature %></strong><% if (bott8.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %><p class="availability"><%= bott8.availability %></p><br><%= bott8.description %></td>
                         <td><%= bott8.price_reg %></td>
+                      </tr>
+                      <% } %>
+                      <% if (bott9.availability == '') { %>
+                      <tr>
+                        <td><strong style="margin-right:5px;"><%= bott9.name_feature %></strong><% if (bott9.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %><p class="availability"><%= bott9.availability %></p><br><%= bott9.description %></td>
+                        <td><%= bott9.price_reg %></td>
+                      </tr>
+                      <% } %>
+                      <% if (bott10.availability == '') { %>
+                      <tr>
+                        <td><strong style="margin-right:5px;"><%= bott10.name_feature %></strong><% if (bott10.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %><p class="availability"><%= bott10.availability %></p><br><%= bott10.description %></td>
+                        <td><%= bott10.price_reg %></td>
                       </tr>
                       <% } %>
                     </tbody>
