@@ -2334,10 +2334,15 @@
   <br>
 
   <!--footer-->
-  <footer class="text-center mb-3" style="background-color: white; color: black;"><small>2021 Sugarbowl</small></footer>
+  <footer class="text-center mb-3" style="background-color: white; color: black;"><small><p id="year"></p></small></footer>
 
 <!--content div-->
 </div>
+
+  <script>
+    var year = new Date().getFullYear();
+    document.getElementById('year').innerHTML = year + ' Sugarbowl';
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <!--bootstrap bundle with popper-->

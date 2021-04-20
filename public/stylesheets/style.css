@@ -483,19 +483,33 @@ a:visited {
 .footer-mainsite {
   background-color: rgb(53,46,41);
   color: white;
-  padding: 10px 20px 90px 20px;
+  padding: 5px 0px 40px 0px;
 }
 
 .footer-column {
   float: left;
   width: 50%;
-  padding: 10px;
+  padding-top: 15px;
+}
+
+.footer-content {
+  width: 55%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.footer-content:after {
+  width: 100%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #tel {
