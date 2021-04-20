@@ -1739,7 +1739,7 @@
                           <td>5.24</td>
                         </tr>
                         <tr>
-                          <td><strong>Soup Of The Day: <%= soup.name_feature %></strong>
+                          <td><strong style="margin-right:5px;">Soup Of The Day: <%= soup.name_feature %></strong>
                             <% if (soup.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %>
                             <% if (soup.diet.includes("Vegetarian")) { %> <img src="/images/leaf.png" id="leaf"><% } %>
                             <% if (soup.diet.includes("Vegan")) { %><b style="color:#C63CFF;"> V</b><% } %>
@@ -1758,11 +1758,11 @@
                             <div style="display: inline-block; text-align:left;">
                               <span style="display:block; font-weight:normal;">
                                 <ul>
-                                  <li><b>1 side (Fries<p class="availability"><%= pommes.availability %></p>/ Yam Fries (+1.50)<p class="availability"><%= yam.availability %></p>/ Caesar Salad<p class="availability"><%= caesar_salad.availability %></p>/ Soup: <%= soup.name_feature %><p class="availability">
-                                    <% if (soup.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %>
-                                    <% if (soup.diet.includes("Vegetarian")) { %> <img src="/images/leaf.png" id="leaf"><% } %>
-                                    <% if (soup.diet.includes("Vegan")) { %><b style="color:#C63CFF;"> V</b><% } %>
-                                     <%= soup.availability %></p>) is included with all burgers and sandwiches, unless specified.</b></li>
+                                  <li><b>1 side (Fries<p class="availability"><%= pommes.availability %></p>/ Yam Fries (+1.50)<p class="availability"><%= yam.availability %></p>/ Caesar Salad<p class="availability"><%= caesar_salad.availability %></p>/ Soup: <%= soup.name_feature %>
+                                  <% if (soup.diet.includes("Gluten-Free")) { %><b style="color:#B9770E;"> GF</b><% } %>
+                                  <% if (soup.diet.includes("Vegetarian")) { %> <img src="/images/leaf.png" id="leaf"><% } %>
+                                  <% if (soup.diet.includes("Vegan")) { %><b style="color:#C63CFF;"> V</b><% } %>
+                                  <p class="availability"> <%= soup.availability %></p>) is included with all burgers and sandwiches, unless specified.</b></li>
                                   <li><b>Gluten-free buns (+1.50 each) are available. Ask your server.</b></li>
                                 </ul>
                               </span>
