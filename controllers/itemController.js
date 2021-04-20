@@ -694,13 +694,24 @@ exports.item_details_get = function(req, res, next) {
 
 // Handle item details on POST
 exports.item_details_post = [
+    // Convert diet to an array
+    (req, res, next) => {
+        if(!(req.body.diet instanceof Array)){
+            if(typeof req.body.diet === 'undefined')
+            req.body.diet = [];
+            else
+            req.body.diet = new Array(req.body.diet);
+        }
+        next();
+    },
+
     // Validate and sanitize fields
     body('name_feature').trim(),
     body('availability').escape(),
     body('price_reg').trim(),
     body('price_large').trim(),
     body('description').trim(),
-    body('diet').escape(),
+    body('diet.*').escape(),
 
     // Process request after validation and sanitization
     (req, res, next) => {

@@ -16,12 +16,12 @@
     <p class="lead"><strong>Only fill the fields that you want to create/update.</strong></p>
     <form method='POST' action=''>
         <div class="form-group">
-          <label for="name_feature"><h5>Feature Name</h5></label>
+          <label for="name_feature"><h5><b>Feature Name</b></h5></label>
           <p><b>For Feature Beer/Brunch/Lunch/Dinner/Dessert and Soup.</b></p>
           <input type="text" class="form-control" id="name_feature" name="name_feature" value="<%= item.name_feature %>">
         </div>
         <div class="form-group">
-        <label for="availability"><h5>Availability</h5></label>
+        <label for="availability"><h5><b>Availability</b></h5></label>
         <select class="form-control" id="availability" name="availability" value="<%= item.availability %>">
             <% if (item.availability == '') { %>
                 <option value="Unavailable">Unavailable</option>
@@ -33,7 +33,7 @@
         </select>
         </div>
         <div class="form-group">
-            <label for="price_reg"><h5>Price</h5></label>
+            <label for="price_reg"><h5><b>Price</b></h5></label>
             <ul>
                 <li><b>If <em>large</em> size exists, use this format: <em>Price Reg. Size / Price Lrg. Size</em></b></li>
             </ul>
@@ -45,24 +45,40 @@
                 <input type="text" class="form-control" id="price_large" name="price_large" value="{{item.price_large}}">
             </div>
         </div> -->
-        <div class="form-group" style='margin-bottom:25px;'>
-            <label for="description"><h5>Description</h5></label>
+        <div class="form-group">
+            <label for="description"><h5><b>Description</b></h5></label>
             <ul>
-                <li><b>For alcohol, provide: <i>city +/- province +/- country of origin / volume / ABV</i>.</b></li>
+                <li><b>For alcohol, provide: <i>(city / province / country of origin) / volume / ABV</i>.</b></li>
                 <li><b>Use <i>this</i> field for Cheesecake.</b></li>
                 <li>Entering multiple lines will display as a single line of text.</li>
             </ul>
             <textarea class="form-control" id="description" name="description" rows="3" value="<%= item.description %>"><%= item.description %></textarea>
         </div>
-        <!-- <div class="form-group" style="margin-bottom: 35px;">
-            <label for="diet"><b>Diet Categories</b></label>
-            <select class="form-control" id="diet" name="diet" value={{item.diet}}>
-              <option value={{item.diet}}>--Select--</option>
-              <option value="Gluten-Free">Gluten-Free</option>
-              <option value="Vegetarian">Vegetarian</option>
-              <option value="Vegan">Vegan</option>
-            </select>
-        </div> -->
+        <div class="form-group" style="margin-bottom: 35px;">
+            <h5><b>Diet Categories</b></h5>
+            <p><b>For Feature Beer/Brunch/Lunch/Dinner/Dessert and Soup.</b></p>
+            <% if (item.diet.includes("Gluten-Free")) {%>
+            <input type="checkbox" id="Gluten-Free" name="diet" value="Gluten-Free" checked>
+            <% } else { %>
+            <input type="checkbox" id="Gluten-Free" name="diet" value="Gluten-Free">
+            <% } %>
+            <label for="Gluten-Free" style="margin-right:20px;">Gluten-Free</label>
+
+            <% if (item.diet.includes("Vegetarian")) {%>
+            <input type="checkbox" id="Vegetarian" name="diet" value="Vegetarian" checked>
+            <% } else { %>
+            <input type="checkbox" id="Vegetarian" name="diet" value="Vegetarian">
+            <% } %>
+            <label for="Vegetarian" style="margin-right:20px;">Vegetarian</label>
+
+            <% if (item.diet.includes("Vegan")) {%>
+            <input type="checkbox" id="Vegan" name="diet" value="Vegan" checked>
+            <% } else { %>
+            <input type="checkbox" id="Vegan" name="diet" value="Vegan">
+            <% } %>
+            <label for="Vegan" style="margin-right:20px;">Vegan</label>
+
+        </div>
         <div class='form-group' style='text-align: center; margin-bottom: 15px;'>
             <button class='btn btn-primary' id='btn_submit' type='submit' style='width: 125px;'>Submit</button>
         </div>
