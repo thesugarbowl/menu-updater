@@ -492,24 +492,10 @@ a:visited {
   padding-top: 15px;
 }
 
-.footer-content {
-  width: 55%;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .footer-row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.footer-content:after {
-  width: 100%;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #tel {
