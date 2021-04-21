@@ -181,12 +181,12 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Feature Draft #8', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
         // },
-        function(callback) {
-          itemCreate('Feature Draft #9', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
-        },
-        function(callback) {
-          itemCreate('Feature Draft #10', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
-        },
+        // function(callback) {
+        //   itemCreate('Feature Draft #9', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate('Feature Draft #10', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Feature Bottle/Can #1', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
         // },
@@ -211,12 +211,12 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Feature Bottle/Can #8', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
         // },
-        function(callback) {
-          itemCreate('Feature Bottle/Can #9', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
-        },
-        function(callback) {
-          itemCreate('Feature Bottle/Can #10', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('Feature Bottle/Can #9', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate('Feature Bottle/Can #10', false, 'Beverages', ['Rotating Feature Beers'], '', false, false, false, false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate("Clos du Soleil Célestiale . Meritage '16", false, 'Beverages', ['Wine'], '14', '19', '52', 'Similkameen Valley, BC', false, '', callback);
         // },
@@ -385,6 +385,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("London Fog", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, false, false, '', callback);
         // },
+        function(callback) {
+          itemCreate("Cold Brew", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4.50', false, false, "Kaffa Roastery's hot extracted Ethiopian Guji, rapidly chilled. Option of sweetened/unsweetened.", false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("Pop: Coca-Cola", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, false, false, '', callback);
         // },
