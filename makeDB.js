@@ -386,7 +386,7 @@ function createItems(cb) {
         //   itemCreate("London Fog", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, false, false, '', callback);
         // },
         function(callback) {
-          itemCreate("Cold Brew", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4.50', false, false, "Kaffa Roastery's hot extracted Ethiopian Guji, rapidly chilled. Option of sweetened/unsweetened.", false, '', callback);
+          itemCreate("Cold Brew", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, "Kaffa Roastery's hot extracted Ethiopian Guji, rapidly chilled. Option of sweetened/unsweetened.", false, '', callback);
         }
         // function(callback) {
         //   itemCreate("Pop: Coca-Cola", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, false, false, '', callback);
