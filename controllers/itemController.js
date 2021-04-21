@@ -783,7 +783,7 @@ exports.all_available_get = function(req, res) {
 exports.all_available_post = function(req, res) {
     if (req.body.all_available == 'true') {
 
-        Item.updateMany({category: 'Food'}, {availability: ''}, {new: true},
+        Item.updateMany({category: 'Food', name: {$nin: ["Lunch Feature #1", "Lunch Feature #2", "Dinner Feature #1", "Dinner Feature #2"]}}, {availability: ''}, {new: true},
             function (err, results) {
                 if (err) {return next(err);}
                 else {
