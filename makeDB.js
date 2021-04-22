@@ -52,9 +52,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Alleykat Aprikat Apricot Ale', false, 'Beverages', ['Beer/Cider'], '6.50', false, false, 'Edmonton / 355 mL / 5%', false, '', callback);
         // },
-        // function(callback) {
-        //   itemCreate('Analog Hive Bomber Honey Wheat', false, 'Beverages', ['Beer/Cider'], '8.25', false, false, 'Edmonton / 473 mL / 4.3%', false, '', callback);
-        // },
+        function(callback) {
+          itemCreate('Analog Hive Bomber Honey Wheat', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Edmonton / 473 mL / 4.3%', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('Annex Force Majeure NE IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 6.9%', false, '', callback);
         // },
@@ -385,9 +385,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("London Fog", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, false, false, '', callback);
         // },
-        function(callback) {
-          itemCreate("Cold Brew", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, "Kaffa Roastery's hot extracted Ethiopian Guji, rapidly chilled. Option of sweetened/unsweetened.", false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("Cold Brew", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, "Kaffa Roastery's hot extracted Ethiopian Guji, rapidly chilled. Option of sweetened/unsweetened.", false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate("Pop: Coca-Cola", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, false, false, '', callback);
         // },
