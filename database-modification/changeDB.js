@@ -1,12 +1,14 @@
 
 const { MongoClient } = require('mongodb');
+require('dotenv').config();
 
 async function main() {
     /**
      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
      * See https://docs.mongodb.com/drivers/node/ for more details
+     * CHANGE THE URI WHEN YOU WANT TO UPDATE THE 'PRODUCTION' DATABASE (instead of the Development Database)
      */
-    const uri = "mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-dev?retryWrites=true&w=majority";
+    const uri = process.env.DEV_DB_URL;
     
     /**
      * The Mongo Client you will use to interact with your database

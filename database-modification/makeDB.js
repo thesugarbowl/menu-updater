@@ -3,7 +3,7 @@
 // IMPORTANT! When creating a new menu item for the database, ensure 'price_reg' is set to '', not false
 // or else price_reg will actually display as 'false' in database & html files. (I have done this below! - Mar 27, 2021)
 
-console.log('This script populates some test wait sessions to your database. Specified database as argument - e.g.: dummyWaitlistDB mongodb+srv://patricialan:development@cluster0.a9azn.mongodb.net/menu-dev?retryWrites=true');
+console.log('This script populates some test wait sessions to your database. Specified database as argument - e.g.: makeDB mongodb+srv://username:password@cluster0.a9azn.mongodb.net/menu-dev?retryWrites=true');
 
 // Get arguments passed on command line
 var userArgs = process.argv.slice(2);
