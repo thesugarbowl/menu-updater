@@ -615,6 +615,10 @@ a:visited {
   color: white;
 }
 
+.login-form {
+  width: 375px;
+}
+
 @media (max-width:519px) {
   #facebook {
     margin-bottom:10px;

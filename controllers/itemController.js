@@ -679,7 +679,7 @@ exports.mainsite_get = function(req, res, next) {
 
 // Display update form on GET
 exports.item_update_get = function(req, res) {
-    res.render('update', {title: 'Sugarbowl Menu Update'});
+    res.render('update', {title: 'Menu Updater'});
 };
 
 // Handle update on POST
