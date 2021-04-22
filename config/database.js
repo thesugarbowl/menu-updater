@@ -5,16 +5,7 @@ require('dotenv').config();
 /**
  * -------------- DATABASE ----------------
  */
-
-/**
- * Connect to MongoDB Server using the connection string in the `.env` file.  To implement this, place the following
- * string into the `.env` file
- * 
- * DB_STRING=mongodb://<user>:<password>@localhost:27017/database_name
- */ 
-
- const dev_db_url = 'mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-dev?retryWrites=true&w=majority';
- const conn = process.env.MONGODB_URI || dev_db_url;
+const conn = process.env.MONGODB_URI || process.env.DEV_DB_URL;
 
 const connection = mongoose.createConnection(conn, {
     useNewUrlParser: true,
@@ -27,7 +18,6 @@ const UserSchema = new mongoose.Schema({
     hash: String,
     salt: String
 });
-
 
 const User = connection.model('User', UserSchema);
 

@@ -21,7 +21,6 @@ const connection = require('./config/database');
 const MongoStore = require('connect-mongo')(session);
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var itemsRouter = require('./routes/menu'); // Import routes for 'menu' area of site
 
 // Gives us access to variables set in the .env file via `process.env.VARIABLE_NAME` syntax
@@ -78,12 +77,10 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/menu', itemsRouter); // Add item routes to middleware chain
 
 // Set up default mongoose connection
-var dev_db_url = 'mongodb+srv://patricialan:development@cluster0.vxl0f.mongodb.net/menu-dev?retryWrites=true&w=majority';
-var mongoDB = process.env.MONGODB_URI || dev_db_url;
+var mongoDB = process.env.MONGODB_URI || process.env.DEV_DB_URL;
 mongoose.connect(mongoDB, {useNewUrlParser:true, useUnifiedTopology:true});
 
 // Get the default connection

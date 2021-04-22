@@ -512,7 +512,7 @@ exports.mainsite_get = function(req, res, next) {
     }, function (err, items) {
         if (err) {return next(err);} // Error in API usage
         // Success, so render
-        res.render('menuMainSite', {
+        res.render('mainsite/menuMainSite', {
             alleykat: items.alleykat,
             analog: items.analog,
             annexgood: items.annexgood,
@@ -683,7 +683,7 @@ exports.mainsite_get = function(req, res, next) {
 
 // Display update form on GET
 exports.item_update_get = function(req, res) {
-    res.render('update', {title: 'Menu Updater'});
+    res.render('menu-updater/update', {title: 'Menu Updater'});
 };
 
 // Handle update on POST
@@ -712,7 +712,7 @@ exports.item_details_get = function(req, res, next) {
             return next(err);
         }
         //
-        res.render('item_details', {title: "Update '" + item.name + "'", item:item});
+        res.render('menu-updater/item_details', {title: "Update '" + item.name + "'", item:item});
     });
 };
 
@@ -758,7 +758,7 @@ exports.item_details_post = [
         
         if (!errors.isEmpty()) {
             // There are errors. Render form again with sanitized values/error messages.
-            res.render('item_details', {title: "Update '" + item.name + "'", item: item, errors: errors.array()});
+            res.render('menu-updater/item_details', {title: "Update '" + item.name + "'", item: item, errors: errors.array()});
             return;
         }
         else {
@@ -779,12 +779,12 @@ exports.item_details_post = [
 
 // Confirmation page GET
 exports.update_confirmation_get = function(req, res) {
-    res.render('update_confirmation', {title: 'Update Was Successful!'})
+    res.render('menu-updater/update_confirmation', {title: 'Update Was Successful!'})
 }
 
 // Make all food available GET
 exports.all_available_get = function(req, res) {
-    res.render('all_available');
+    res.render('menu-updater/all_available');
 }
 
 // Make all food available POST
@@ -795,7 +795,7 @@ exports.all_available_post = function(req, res) {
             function (err, results) {
                 if (err) {return next(err);}
                 else {
-                    res.redirect('/menu/gravlaxisnotalaxative/update');
+                    res.redirect('/menu/update');
                 }
             }
         );
@@ -804,7 +804,7 @@ exports.all_available_post = function(req, res) {
 
 // Make breakfast unavailable GET
 exports.breakfast_unavailable_get = function(req, res) {
-    res.render('breakfast_unavailable');
+    res.render('menu-updater/breakfast_unavailable');
 }
 
 // Make breakfast unavailable POST
@@ -815,7 +815,7 @@ exports.breakfast_unavailable_post = function(req, res) {
             function (err, results) {
                 if (err) {return next(err);}
                 else {
-                    res.redirect('/menu/gravlaxisnotalaxative/update');
+                    res.redirect('/menu/update');
                 }
             }
         );

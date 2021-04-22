@@ -2,6 +2,6 @@ module.exports.isAuth = (req, res, next) => {
     if (req.isAuthenticated()) {
         next();
     } else {
-        res.render('protected-page');
+        res.render('menu-updater/protected-page');
     }
 }

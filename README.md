@@ -1,3 +1,3 @@
-# Sugarbowl Website
+# Sugarbowl Website & Menu Updater
 
-Website for the restaurant Sugarbowl.
+Website and Menu Updater for the restaurant Sugarbowl.
