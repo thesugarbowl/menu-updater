@@ -180,7 +180,7 @@ exports.wait_position = function(req, res, next) {
 
 // Display Wait create form on GET (by STAFF)
 exports.wait_create_get = function(req, res, next) {
-        res.render('waitlist/wait_form', {title: "Add Guest To Waitlist"});
+        res.render('waitlist/wait_form');
 };
 
 // Display Wait create on POST (by STAFF)

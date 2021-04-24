@@ -52,7 +52,11 @@
     </nav>
 
     <main class="container" role="main" style="padding:60px">
-        <h1 id="h1-waitlist"><%= title %></h1>
+        <% if (typeof wait=='undefined') { %>
+        <h1 id="h1-waitlist">Add Guest To Waitlist</h1>
+        <% } else if (typeof wait!='undefined') { %>
+        <h1 id="h1-waitlist">Update Guest's Session</h1>
+        <% } %>
         
         <form method="POST" action="">
             <div class="form-group">
