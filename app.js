@@ -60,7 +60,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 var sess = {
   secret: process.env.SECRET,
   resave: false,
-  saveUninitialized: true,
+  saveUninitialized: false,
   store: sessionStore,
   cookie: {
     httpOnly: true,
