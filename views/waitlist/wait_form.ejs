@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Sessions</title>
+    <!--Bootstrap styling-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel='stylesheet', href='/stylesheets/style.css'>
+</head>
+<body id="body-waitlist">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" style="margin-left:10px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="main-navbar" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto" style="margin-left:10px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions/waiting">Waiting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions/notified">Notified</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions/confirmed">Confirmed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions/archived">Archived</a>
+                </li>
+                <% if (typeof wait!='undefined') { %>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Update</a>
+                    </li>
+                <% } else { %>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/waitlist/session/create">Create New</a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+        <a class="navbar-brand" href="/waitlist/logout">
+            <button type="button" class="btn btn-outline-light">Logout</button>
+        </a>
+    </nav>
+
+    <main class="container" role="main" style="padding:60px">
+        <h1 id="h1-waitlist"><%= title %></h1>
+        
+        <form method="POST" action="">
+            <div class="form-group">
+                <label><b>* means Required</b></label>
+            </div>
+            <div class="form-group">
+                <label for="first_name"><b>First Name*</b></label>
+                <input id="first_name" class="form-control" type="text" placeholder="First Name" name="first_name" required="true" value="<%= typeof wait!='undefined' ? wait.first_name : '' %>">
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>Last Name*</b></label>
+                <input id="last_name" class="form-control" type="text" placeholder="Last Name" name="last_name" required="true" value="<%= typeof wait!='undefined' ? wait.last_name : '' %>">
+            </div>
+            <div class="form-group">
+                <label for="party_num"><b>Number Of People*</b></label>
+                <input id="party_num" class="form-control" type="text" placeholder="e.g. 2" min="1" max="90" name="party_num" required="true" value="<%= typeof wait!='undefined' ? wait.party_num : '' %>">
+            </div>
+            <div class="form-group">
+                <label for="seating"><b>Seating Preference</b></label>
+                <select id="seating" class="form-control" type="select" placeholder="Select..." name="seating" required="false">
+                    <!-- <option value="Indoors">Indoors</option> -->
+                    <option value="Patio">Patio</option>
+                    <!-- <option value="No Preference">No Preference</option> -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label><b>Is the Guest carrying a smart phone?</b></label>
+                <input class="checkbox-input" type="checkbox" name="has_cell" id="has_cell" value="No" style="margin-left:10px; margin-right:5px;">
+                <label for="has_cell">No</label>
+                <p><em>If 'No', fill the fields below with 7806556817 or with your own cell phone number.</em></p>
+            </div>
+            <div class="form-group">
+                <label for="cell_num"><b>Phone Number* (10 digits; no other characters)</b></label>
+                <input id="cell_num" class="form-control" type="tel" pattern="[0-9]{10}" placeholder="##########" name="cell_num" required="true" value="<%= typeof wait!='undefined' ? wait.cell_num : '' %>">
+            </div>
+            <br>
+            <div class="form-group" style="text-align: center;">
+                <button class="btn btn-primary" id="detailbuttons" type="submit">Submit</button>
+            </div>
+        </form>
+
+        <% if (typeof wait!='undefined') { %>
+        <div style="text-align:center;">
+            <a href="<%= wait.urlDetails %>">
+                <button class="btn btn-dark" id="detailbuttons">Cancel</button>
+            </a>
+        </div>
+        <% } %>
+        <% if (typeof errors!='undefined') { %>
+        <ul>
+            <% errors.forEach(function(error) { %>
+                <li><%= error.msg %></li>
+            <% }) %>
+        </ul>
+        <% } %>
+
+    </main>
+            
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

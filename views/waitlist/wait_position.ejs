@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Sessions</title>
+    <!--Bootstrap styling-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel='stylesheet', href='/stylesheets/style.css'>
+</head>
+<body id="body-waitlist">
+    <main class="container" role="main" style="padding:60px">
+        <h1 id="h1-waitlist"><%= title %></h1>
+        <% if (wait.status == 'Waiting') { %>
+            <p class="lead" style="margin-left:8px; margin-right:8px;"><b>Hi <%= wait.first_name %>! When we're ready for you to come in, we'll send you an SMS or Phone you. Your 'Status' will also change to 'Notified'.</b></p>
+            <br>
+            <p class="lead" style="margin-left:8px; margin-right:8px;"><b>Please bookmark this page to track your progress on the Waitlist. (Remember to refresh the page!)</b></p>
+            <hr>
+            <br>
+        <% } %>
+        <h2><b><%= wait.name %></b></h2>
+        <br>
+        <% for (var i = 0; i < waitStartArray.length; i++) { %>
+            <% var waitStartId = waitStartArray[i]._id.toString() %>
+            <% var waitId = wait._id.toString() %>
+            <% if (waitStartArray[i]._id.toString() == waitId.toString()) { %>
+                <% var position = i + 1 %>
+            <% } %>
+        <% } %>
+
+        <% if (wait.status == 'Waiting') { %>
+            <h4 style="color:blue;"><b>Status: Waiting</b></h4>
+            <p>You are number <h2 style="color:blue;"><%= position %></h2> (of <%= waitingCount %>) in line.</p>
+        <% } else if (wait.status == 'Notified') { %>
+            <h3 style="color:green;"><b>Status: Notified</b></h3>
+            <h4>Come on in!</h4>
+        <% } else if (wait.status == 'Confirmed') { %>
+            <h3 style="color:#e60000;"><b>Status: Confirmed</b></h3>
+            <h4>See you soon!</h4>
+        <% } else if (wait.status == 'Archived') { %>
+            <p class="lead">You have been removed from the waitlist.</p>
+        <% } %>
+        <br>
+
+        <% if (wait.status == 'Waiting') { %>
+            <p style="margin-left:20px; margin-right:20px;"><b>When you are #1 in line, please be ready to come in.</b></p>
+        <% } else if (wait.status == 'Notified') { %>
+            <p class="lead">To confirm you are on your way</p>
+            <form method='POST' action=''>
+                <div class="form-group" style="text-align:center;">
+                    <input id="archiveSessions" class="form-control" type="hidden" name="confirmWait" required="true" value="true">
+                    <button class="btn btn-success" id="detailbuttons" type="submit">Click Here</button>
+                </div>
+            </form>
+        <% } %>
+        <hr>
+        <h5><b>Your Details:</b></h5>
+        <br>
+
+        <% if (wait.status == 'Notified') { %>
+            <p><b># Of Times Notified</b> (by SMS/Phone Call): <%= wait.notify_total %></p>
+            <p><b>First Notification: </b><%= wait.waitEnd_localTime %></p>
+        <% } else if (wait.status == "Archived") { %>
+            <p><b># Of Times Notified</b> (by SMS/Phone Call): <%= wait.notify_total %></p>
+            <p><b>First Notification: </b><%= wait.waitEnd_localTime %></p>
+        <% } %>
+        <p><b>Starting Waitlist Position: </b><%= wait.position %></p>
+        <p><b>Number Of People: </b><%= wait.party_num %></p>
+        <p><b>Seating Preference: </b><%= wait.seating %></p>
+        <p><b>Cell Number: </b><%= wait.cell_num %></p>
+
+        <% if (wait.status == "Waiting") { %>
+            <br>
+            <a href="<%= wait.urlPosition %>">
+                <button class="btn btn-success" id="detailbuttons" type="button" style="margin-bottom: 40px;">Refresh Page</button>
+            </a>
+            <br>
+            <a href="<%= wait.urlGuestUpdate %>">
+                <button class="btn btn-primary" id="detailbuttons" type="button" style="margin-bottom: 40px;">Update Details</button>
+            </a>
+            <br>
+            <a href="<%= wait.urlGuestRemove %>">
+                <button class="btn btn-danger" id="detailbuttons" type="button" style="margin-bottom: 60px;">Leave The Waitlist</button>
+            </a>
+        <% } %>
+    </main>
+            
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

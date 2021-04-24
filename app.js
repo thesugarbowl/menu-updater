@@ -22,6 +22,7 @@ const MongoStore = require('connect-mongo')(session);
 
 var indexRouter = require('./routes/index');
 var itemsRouter = require('./routes/menu'); // Import routes for 'menu' area of site
+var waitlistRouter = require('./routes/waitlist'); // Import routes for "waitlist" area of site
 
 // Gives us access to variables set in the .env file via `process.env.VARIABLE_NAME` syntax
 require('dotenv').config();
@@ -46,15 +47,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 
  const sessionStore = new MongoStore({ mongooseConnection: connection, collection: 'sessions' });
 
- app.use(session({
-     secret: process.env.SECRET,
-     resave: false,
-     saveUninitialized: true,
-     store: sessionStore,
-     cookie: {
-         maxAge: 1000 * 60 * 60 * 24 // Equals 1 day (1 day * 24 hr/1 day * 60 min/1 hr * 60 sec/1 min * 1000 ms / 1 sec)
-     }
- }));
+//  app.use(session({
+//      secret: process.env.SECRET,
+//      resave: false,
+//      saveUninitialized: true,
+//      store: sessionStore,
+//      cookie: {
+//          maxAge: 1000 * 60 * 60 * 24 // Equals 1 day (1 day * 24 hr/1 day * 60 min/1 hr * 60 sec/1 min * 1000 ms / 1 sec)
+//      }
+//  }));
+
+var sess = {
+  secret: process.env.SECRET,
+  resave: false,
+  saveUninitialized: true,
+  store: sessionStore,
+  cookie: {
+    httpOnly: true,
+    maxAge: 1000 * 60 * 60 * 24 // Equals 1 day (1 day * 24 hr/1 day * 60 min/1 hr * 60 sec/1 min * 1000 ms / 1 sec)
+  }
+}
+ 
+if (app.get('env') === 'production') {
+  app.set('trust proxy', 1) // trust first proxy
+  sess.cookie.secure = true // serve secure cookies
+}
+ 
+app.use(session(sess))
  
  /**
   * -------------- PASSPORT AUTHENTICATION ----------------
@@ -78,6 +97,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/menu', itemsRouter); // Add item routes to middleware chain
+app.use('/waitlist', waitlistRouter); // Add waitlist routes to middleware chain
 
 // Set up default mongoose connection
 var mongoDB = process.env.MONGODB_URI || process.env.DEV_DB_URL;

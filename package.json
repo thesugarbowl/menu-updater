@@ -8,6 +8,9 @@
     "serverstart": "DEBUG=main:* npm run devstart"
   },
   "dependencies": {
+    "@aws-sdk/client-sns": "^3.13.1",
+    "@aws-sdk/node-http-handler": "^3.13.1",
+    "@aws-sdk/types": "^3.13.1",
     "async": "^3.2.0",
     "compression": "^1.7.4",
     "connect-mongo": "^3.2.0",

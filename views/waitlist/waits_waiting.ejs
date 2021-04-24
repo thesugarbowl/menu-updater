@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiting Sessions</title>
+    <!--Bootstrap styling-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel='stylesheet', href='/stylesheets/style.css'>
+</head>
+<body id="body-waitlist">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" style="margin-left:10px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="main-navbar" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto" style="margin-left:10px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions">Active</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/waitlist/sessions/waiting">Waiting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions/notified">Notified</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions/confirmed">Confirmed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/sessions/archived">Archived</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/waitlist/session/create">Create New</a>
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-brand" href="/waitlist/logout">
+            <button type="button" class="btn btn-outline-light">Logout</button>
+        </a>
+    </nav>
+
+    <main class="container" role="main" style="padding:60px">
+        <h1 id="h1-waitlist"><%= title %></h1>
+        <div style="text-align:center;">
+        <ul style="display: inline-block; text-align: left;">
+            <li><b>Waiting:</b> <%= waits_waitCount %></li>
+        </ul>
+        </div>
+        <p><em>Ordered by (1) 'when' a Guest started waiting (top = started waiting the 'longest' time ago), then by (2) first name.</em></p>
+        <% if (waits_waiting) { %>
+            <ol>
+            <% waits_waiting.forEach(function(wait){ %>
+            <li><a href="<%= wait.urlDetails %>" style="color:#0094FF;"><%= wait.name %></a>; party of <b style="color:blue;"><%= wait.party_num %></b>; <b style="color:#0094FF;"><%= wait.seating %></b>; <b style="color:#003BEF;"><%= wait.cell_num %></b>; waited <b><%= wait.wait_duration %> min</b> so far
+                <% if (wait.has_cell == 'No') { %>
+                    ; <b style="color:red;">IS <em>NOT</em> CARRYING A SMART PHONE</b>
+                <% } %>
+            </li>
+            <% }) %>
+            </ol>   
+        <% } else { %>
+            <br>
+            <p><b>There are no 'Waiting' Sessions.</b></p>
+        <% } %>
+        <br>
+        <hr>
+        <a href="/waitlist/sessions/waiting">
+            <button class="btn btn-success" type="button" style="margin-bottom:45px; padding-right:40px; padding-left:40px;">Refresh Page</button>
+        </a>
+        <br>
+        <!-- <a href="/waitlist/sessions/notify-all">
+            <button class="btn btn-danger" type="button" style="margin-bottom:45px; padding-right:55px; padding-left:55px;">Notify All</button>
+        </a>
+        <br> -->
+        <a href="/waitlist/sessions/archive-request-waiting">
+            <button class="btn btn-primary" type="button">Archive Old Sessions</button>
+        </a>
+    </main>
+            
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,3 +1,3 @@
-# Sugarbowl Website & Menu Updater
+# Sugarbowl Website, Menu Updater & Waitlist
 
-Website and Menu Updater for the restaurant Sugarbowl.
+Website, Menu Updater and Waitlist app for the restaurant Sugarbowl.

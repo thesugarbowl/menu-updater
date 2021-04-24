@@ -11,21 +11,47 @@ const connection = require('../config/database');
 const User = connection.models.User;
 const isAuth = require('./authMiddleware').isAuth;
 
-// Item routes
-// GET menu home page
-router.get('/', item_controller.menu);
-
-// GET menu for main site
-router.get('/mainsite', item_controller.mainsite_get);
-
 /////////////////////// Authentication
 // -------------- POST ROUTES ----------------
 router.post('/login', passport.authenticate('local', { failureRedirect: '/menu/login-failure', successRedirect: '/menu/update' }));
+
+router.post('/register', (req, res, next) => {
+    const saltHash = genPassword(req.body.pw);
+    
+    const salt = saltHash.salt;
+    const hash = saltHash.hash;
+
+    const newUser = new User({
+        username: req.body.uname,
+        hash: hash,
+        salt: salt,
+        admin: true
+    });
+
+    newUser.save()
+        .then((user) => {
+            console.log(user);
+        });
+
+    res.redirect('/login');
+ });
 
  // -------------- GET ROUTES ----------------
 
 router.get('/login', (req, res, next) => {
     res.render('menu-updater/login');
+});
+
+// When you visit http://localhost:3000/register, you will see "Register Page"
+router.get('/register', (req, res, next) => {
+
+    const form = '<h1>Register Page</h1><form method="post" action="register">\
+                    Enter Username:<br><input type="text" name="uname">\
+                    <br>Enter Password:<br><input type="password" name="pw">\
+                    <br><br><input type="submit" value="Submit"></form>';
+
+    res.send(form);
+    
 });
 
 // Visiting this route logs the user out
@@ -35,10 +61,17 @@ router.get('/logout', (req, res, next) => {
 });
 
 router.get('/login-failure', (req, res, next) => {
-    res.render('menu-updater/wrong_password');
+    res.render('menu-updater/login_failure');
 });
 
 //////////////////////
+
+// Item routes
+// GET menu home page
+router.get('/', item_controller.menu);
+
+// GET menu for main site
+router.get('/mainsite', item_controller.mainsite_get);
 
 // GET request for updating an item
 router.get('/update', isAuth, item_controller.item_update_get);
