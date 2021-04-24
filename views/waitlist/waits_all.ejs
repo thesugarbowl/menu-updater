@@ -59,7 +59,7 @@
         <% if (waits_all) { %>
             <ol>
             <% waits_all.forEach(function(wait){ %>
-            <li>
+            <li id="li-waitlist">
                 <% if (wait.status == "Waiting") { %>
                     <b style="color:blue;"><%= wait.status %></b>;
                 <% } else if (wait.status == "Notified") { %>

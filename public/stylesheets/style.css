@@ -660,25 +660,6 @@ a:visited {
   margin: 0px 0px 30px 0px;
 }
 
-#ul-wailist {
-  display: inline-block;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-#ol-waitlist {
-  display: inline-block;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-#form-waitlist {
-  display: inline-block;
-  text-align: left;
-  margin-bottom: 20px;
-  width: 75%;
-}
-
 #li-waitlist {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -686,11 +667,6 @@ a:visited {
 
 #detailbuttons {
   width: 185px;
-}
-
-#left-align-waitlist {
-  display: inline-block;
-  text-align: left;
 }
 
 #table_image {

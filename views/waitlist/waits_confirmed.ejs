@@ -56,7 +56,7 @@
         <% if (waits_confirmed) { %>
             <ol>
             <% waits_confirmed.forEach(function(wait){ %>
-            <li><a href="<%= wait.urlDetails %>" style="color:#0094FF;"><%= wait.name %></a>; party of <b style="color:blue;"><%= wait.party_num %></b>; <b style="color:#0094FF;"><%= wait.seating %></b>; <b style="color:#003BEF;"><%= wait.cell_num %></b>; waited <b><%= wait.wait_completed %> min</b> until notified
+            <li id="li-waitlist"><a href="<%= wait.urlDetails %>" style="color:#0094FF;"><%= wait.name %></a>; party of <b style="color:blue;"><%= wait.party_num %></b>; <b style="color:#0094FF;"><%= wait.seating %></b>; <b style="color:#003BEF;"><%= wait.cell_num %></b>; waited <b><%= wait.wait_completed %> min</b> until notified
                 <% if (wait.has_cell == 'No') { %>
                     ; <b style="color:red;">IS <em>NOT</em> CARRYING A SMART PHONE</b>
                 <% } %>
