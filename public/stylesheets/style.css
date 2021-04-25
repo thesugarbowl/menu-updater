@@ -659,7 +659,7 @@ a:visited {
 
 #body-waitlist {
   text-align: center;
-  width: 100%;
+  width: auto;
   margin: auto;
   overflow-x: hidden;
 }
