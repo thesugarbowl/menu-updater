@@ -657,10 +657,6 @@ a:visited {
 
 /* Waitlist */
 
-html {
-  overflow-x: hidden;
-}
-
 #body-waitlist {
   text-align: center;
   width: 100%;
