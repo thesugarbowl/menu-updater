@@ -6,47 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <!--Bootstrap styling-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+ <!--CSS-->
     <link rel='stylesheet', href='/stylesheets/style.css'>
 </head>
 <body id="body-waitlist">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" style="margin-left:10px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" style="margin-left:15px; margin-bottom:5px;">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="main-navbar" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto" style="margin-left:10px;">
-                <li class="nav-item active" id="link-text">
+                <li class="nav-item active" id="link-text" style="margin-left:15px;">
                     <a class="nav-link" href="/waitlist/faq">FAQ</a>
                 </li>
-                <li class="nav-item" id="link-text">
+                <li class="nav-item" id="link-text" style="margin-left:15px;">
                     <a class="nav-link" href="/waitlist/sessions">Active</a>
                 </li>
-                <li class="nav-item" id="link-text">
+                <li class="nav-item" id="link-text" style="margin-left:15px;">
                     <a class="nav-link" href="/waitlist/sessions/waiting">Waiting</a>
                 </li>
-                <li class="nav-item" id="link-text">
+                <li class="nav-item" id="link-text" style="margin-left:15px;">
                     <a class="nav-link" href="/waitlist/sessions/notified">Notified</a>
                 </li>
-                <li class="nav-item" id="link-text">
+                <li class="nav-item" id="link-text" style="margin-left:15px;">
                     <a class="nav-link" href="/waitlist/sessions/confirmed">Confirmed</a>
                 </li>
-                <li class="nav-item" id="link-text">
+                <li class="nav-item" id="link-text" style="margin-left:15px;">
                     <a class="nav-link" href="/waitlist/sessions/archived">Archived</a>
                 </li>
-                <li class="nav-item" id="link-text">
+                <li class="nav-item" id="link-text" style="margin-left:15px;">
                     <a class="nav-link" href="/waitlist/session/create">Create New</a>
                 </li>
             </ul>
         </div>
         <a class="navbar-brand" href="/waitlist/logout">
-            <button type="button" class="btn btn-outline-light" id="link-text">Logout</button>
+            <button type="button" class="btn btn-outline-light" id="link-text" style="margin-left:15px;">Logout</button>
         </a>
     </nav>
 
-    <main class="container" role="main" style="padding:60px">
-        <h1 id="h1-waitlist">Sugarbowl Waitlist</h1>
+    <main class="container" role="main">
+        <div style="width:100%; margin:auto;">
+        <h1 id="h1-waitlist" style="margin-top:40px;">Sugarbowl Waitlist</h1>
         <br>
         <p class="lead"><b>Welcome to our Waitlist App!</b></p>
         <p><b>For the FAQ, please pay attention to statements in 'bold' font.</b></p>
@@ -180,8 +181,28 @@
                     <li>The form directs them to their Wait Session Details (the Guest version). <b>The page displays their Position on the waitlist</b> (e.g. 2 of 5), contact info, etc. <b>They are asked to bookmark this page to track their progress</b> in the waitlist (Figure 1).</li>
                 </ul>
             <br>
+
             <h5 style="text-align:center;"><b>Figure 1</b></h5>
-            <img id="image" src="/images/waitlist/guest_waitSessionDetails.png" height='500'>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalFig1" style="display:block;margin-left:auto;margin-right:auto;">
+                <img id="image" src="/images/waitlist/guest_waitSessionDetails.png" height='250'>
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="modalFig1" tabindex="-1" aria-labelledby="modalLabelFig1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100" id="modalLabelFig1">Figure 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/waitlist/guest_waitSessionDetails.png" id="faq-image" alt="Figure 1">
+                </div>
+                </div>
+            </div>
+            </div>
+
             <br>
             <li><b>The Guest may click 'Update' on their Wait Session Details page</b> to update the number of people in their party, seating preference, phone number, name, etc.</li>
             <li><b>If we click 'Notify By SMS':</b></li>
@@ -191,20 +212,57 @@
             </ul>
             <li><b>Alternatively, we can Phone the Guest to ask them to come into the restaurant. By clicking 'Aready Phoned Guest', the Guest's status also changes from 'Waiting' to 'Notified', and the time of 'First Notification' and 'Number Of Times Notified' also change accordingly.</b> (So technically, you could send the Guest an SMS <em>and</em> Phone them (and use either/both methods multiple times), if that's what you want, but again SMS costs money.)</li>
             <br>
-            <table class="table-responsive" id="table_image">
-                <tr>
-                    <td>
-                        <h5 style="text-align:center;"><b>Figure 2</b></h5>
-                        <img id="image" src="/images/waitlist/notify_sms.png" width="300" style="margin:auto; margin-bottom:10px;">
-                    </td>
-                    <td>
-                        <h5 style="text-align:center;"><b>Figure 3</b></h5>
-                        <img id="image" src="/images/waitlist/guest_notified.png" height="500" style="margin-left:10px;">
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <li><b>The Guest can drop out of the Waitlist by clicking a 'Leave The Waitlist' button on their Wait Session Details.</b></li>
+            <div class="row" style="margin-top:0px; margin-bottom:30px;">
+                <div class="col" style="margin-bottom:30px;">
+                    
+                    <h5 style="text-align:center;"><b>Figure 2</b></h5>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalFig2" style="display:block;margin-left:auto;margin-right:auto;">
+                        <img id="image" src="/images/waitlist/notify_sms.png" width="250" style="display:block;margin:auto;">
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalFig2" tabindex="-1" aria-labelledby="modalLabelFig2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100" id="modalLabelFig2">Figure 2</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/images/waitlist/notify_sms.png" id="faq-image" alt="Figure 2">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <h5 style="text-align:center;"><b>Figure 3</b></h5>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalFig3" style="display:block;margin-left:auto;margin-right:auto;">
+                        <img id="image" src="/images/waitlist/guest_notified.png" height="250" style="display:block;margin:auto;">
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalFig3" tabindex="-1" aria-labelledby="modalLabelFig3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100" id="modalLabelFig3">Figure 3</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/images/waitlist/guest_notified.png" id="faq-image" alt="Figure 3">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <li style="margin-top:0px;"><b>The Guest can drop out of the Waitlist by clicking a 'Leave The Waitlist' button on their Wait Session Details.</b></li>
             <li><b>When the Guest is notified to come in, a button displays on their Wait Session Details allowing them to confirm that they are coming in</b>. When they do this, <b>their status changes from "Notified" to "Confirmed".</b></li>
             <li>Guest enters the restaurant.</li>
         </ol>
@@ -212,11 +270,16 @@
         <p style="text-align: left;"><b>If the Guest is <em>not</em> carrying a Smart Phone, see <a href="#create_wait" style="color:#0094FF;">'Create a Wait Session'</a>.</b></p>
         <br>
         <a href="#">
-            <button class="btn btn-primary">Back To The Top</button>
+            <button class="btn btn-primary" style="margin-bottom:60px;">Back To The Top</button>
+        </a>
+        </div>
     </main>
             
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+    <!--bootstrap bundle with popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
