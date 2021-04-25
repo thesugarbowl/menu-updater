@@ -521,6 +521,12 @@ a:visited {
   #nav-link {
     font-weight: normal;
   }
+  .top-banner-text {
+    margin-top: 130px;
+  }
+  .hero-text {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 600px) {
