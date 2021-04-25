@@ -659,6 +659,9 @@ a:visited {
 
 #body-waitlist {
   text-align: center;
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
 }
 
 #h1-waitlist {
