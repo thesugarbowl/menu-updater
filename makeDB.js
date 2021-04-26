@@ -52,9 +52,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Alleykat Aprikat Apricot Ale', false, 'Beverages', ['Beer/Cider'], '6.50', false, false, 'Edmonton / 355 mL / 5%', false, '', callback);
         // },
-        function(callback) {
-          itemCreate('Analog Hive Bomber Honey Wheat', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Edmonton / 473 mL / 4.3%', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('Analog Hive Bomber Honey Wheat', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Edmonton / 473 mL / 4.3%', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Annex Force Majeure NE IPA', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 6.9%', false, '', callback);
         // },
@@ -412,9 +412,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("S.Pellegrino: Lemon", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
         // },
-        // function(callback) {
-        //   itemCreate("S.Pellegrino: Pomegranate-Orange", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
-        // },
+        function(callback) {
+          itemCreate("S.Pellegrino: Orange", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("S.Pellegrino Sparkling Mineral Water: 250 mL", false, 'Beverages', ['Coffee & Non-Alcoholic'], '2.50', false, false, '250 mL Bottle', false, '', callback);
         // },
