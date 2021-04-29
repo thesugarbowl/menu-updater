@@ -358,6 +358,12 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Caesar", false, 'Beverages', ['Cocktails'], '8', '12', false, false, false, '', callback);
         // },
+        function(callback) {
+          itemCreate("Mojito", false, 'Beverages', ['Cocktails'], '9', '14', false, false, false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Old-Fashioned", false, 'Beverages', ['Cocktails'], '14', false, false, false, false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("B52", false, 'Beverages', ['Specialty Coffees'], '8', '12', false, 'Kahlua, Grand Marnier, Baileys', false, '', callback);
         // },
@@ -412,9 +418,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("S.Pellegrino: Lemon", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
         // },
-        function(callback) {
-          itemCreate("S.Pellegrino: Orange", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("S.Pellegrino: Orange", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate("S.Pellegrino Sparkling Mineral Water: 250 mL", false, 'Beverages', ['Coffee & Non-Alcoholic'], '2.50', false, false, '250 mL Bottle', false, '', callback);
         // },
