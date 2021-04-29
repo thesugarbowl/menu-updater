@@ -1743,7 +1743,7 @@
                           <td>8</td>
                         </tr>
                         <tr>
-                          <td><strong>Caesar Salad </strong><img src="/images/leaf.png" id="leaf"><p class="availability"><%= caesar_salad.availability %></p></td>
+                          <td><strong>Caesar Salad </strong><img src="/images/leaf.png" id="leaf"><p class="availability"><%= caesar_salad.availability %></p><br>Romaine lettuce, kale, Parmesan cheese, bread crumbs, and garlic caper dressing</td>
                           <td>5.24</td>
                         </tr>
                         <tr>
@@ -1892,7 +1892,28 @@
                       </tr>
                       <tr>
                         <td>
-                            <strong>Beef Burger</strong><p class="availability"><%= beef.availability %></p><br>Beef patty, Gruyère cheese, red onion, lettuce, tomato, pickles, honey dill mayo, on house-made brioche bun, with choice of side</td>
+                          
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalBeefBurger">
+                            <strong>Beef Burger</strong>
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalBeefBurger" tabindex="-1" aria-labelledby="modalLabelBeefBurger" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header text-center">
+                                  <h4 class="modal-title w-100" id="modalLabelBeefBurger">Beef Burger</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="/images/beefBurger.jpg" id="foodImage" alt="Beef Burger">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        <p class="availability"><%= beef.availability %></p><br>Beef patty, Gruyère cheese, red onion, lettuce, tomato, pickles, honey dill mayo, on house-made brioche bun, with choice of side</td>
                         <td>18</td>
                       </tr>
                       <tr>
@@ -1949,7 +1970,28 @@
                       </tr>
                       <tr>
                         <td>
-                            <strong>Jerk Chicken Sandwich</strong><p class="availability"><%= jerk.availability %></p><br>Jerk chicken breast, red onion, lettuce, tomato, pickles, avocado mayo, on house-made brioche bun, with choice of side</td>
+                          
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalJerkChicken">
+                            <strong>Jerk Chicken Sandwich</strong>
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalJerkChicken" tabindex="-1" aria-labelledby="modalLabelJerkChicken" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header text-center">
+                                  <h4 class="modal-title w-100" id="modalLabelJerkChicken">Jerk Chicken Sandwich</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="/images/jerkChicken.jpg" id="foodImage" alt="Jerk Chicken Sandwich">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <p class="availability"><%= jerk.availability %></p><br>Jerk chicken breast, red onion, lettuce, tomato, pickles, avocado mayo, on house-made brioche bun, with choice of side</td>
                         <td>17</td>
                       </tr>
                       <tr>
