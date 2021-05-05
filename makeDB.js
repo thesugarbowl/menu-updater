@@ -358,12 +358,12 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Caesar", false, 'Beverages', ['Cocktails'], '8', '12', false, false, false, '', callback);
         // },
-        function(callback) {
-          itemCreate("Mojito", false, 'Beverages', ['Cocktails'], '9', '14', false, false, false, '', callback);
-        },
-        function(callback) {
-          itemCreate("Old-Fashioned", false, 'Beverages', ['Cocktails'], '14', false, false, false, false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("Mojito", false, 'Beverages', ['Cocktails'], '9', '14', false, false, false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("Old-Fashioned", false, 'Beverages', ['Cocktails'], '14', false, false, false, false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate("B52", false, 'Beverages', ['Specialty Coffees'], '8', '12', false, 'Kahlua, Grand Marnier, Baileys', false, '', callback);
         // },
@@ -469,9 +469,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Vegan Sausage And Tofu Scramble", false, 'Food', ['Breakfast'], '16', false, false, 'Vegan sausage, tofu, roasted yam, kale, onions, mixed bell peppers, nutritional yeast, and turmeric, with side of Eleanor & Laurent bread', ['Vegan'], '', callback);
         // },
-        // function(callback) {
-        //   itemCreate("French Toast", false, 'Food', ['Breakfast'], '16', false, false, 'Slices of house-made brioche or cinnamon bun with icing sugar, berry compote (blueberry, raspberry, and strawberry), and side crème fraîche', ['Vegetarian'], '', callback);
-        // },
+        function(callback) {
+          itemCreate("French Toast", false, 'Food', ['Breakfast'], '16', false, false, 'Slices of house-made brioche or cinnamon bun with icing sugar, berry compote (blueberry, raspberry, and strawberry), and side crème fraîche', ['Vegetarian'], '', callback);
+        }
         // function(callback) {
         //   itemCreate("The Sugar Griddle", false, 'Food', ['Breakfast', 'Lunch & Dinner'], '10', false, false, 'Half waffle with a fried egg, 2 pieces of Four Whistle Farms back bacon, provolone cheese, and maple butter.', false, '', callback);
         // },

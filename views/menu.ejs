@@ -104,10 +104,10 @@
                             <td><strong>SYC Pontification Italian Pilsner</strong><p class="availability"><%= sycPont.availability %></p><br>Edmonton / 473 mL / 4.9%</td>
                             <td>9</td>
                           </tr>
-                          <tr>
+                          <!-- <tr>
                             <td><strong>The Dandy Brewing Company T2G IPA</strong><p class="availability"><%= dandyt2g.availability %></p><br>Calgary / 473 mL / 7.5%</td>
                             <td>9</td>
-                          </tr>
+                          </tr> -->
                           <tr>
                             <td><strong>Townsquare Forged Amber Rye Ale</strong><p class="availability"><%= town.availability %></p><br>Edmonton / 473 mL / 5.2%</td>
                             <td>8.25</td>
@@ -1720,8 +1720,28 @@
                         </tr>
                         <tr>
                           <td>
-                              <strong>Almond Spread With Pita Bread </strong><b style="color:#C63CFF;">V</b><p class="availability"><%= almond.availability %></p><br>Almonds, jalapeños, garlic, and grapeseed oil</td>
-                          <td>16</td>
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalAlmondSpread">
+                                <strong>Almond Spread With Pita Bread</strong>
+                              </button>
+                              
+                              <!-- Modal -->
+                              <div class="modal fade" id="modalAlmondSpread" tabindex="-1" aria-labelledby="modalLabelAlmondSpread" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                      <h4 class="modal-title w-100" id="modalLabelAlmondSpread">Almond Spread With Pita Bread</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="/images/almondSpread_edited.jpg" id="foodImage" alt="Almond Spread With Pita Bread">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <b style="color:#C63CFF;">V</b><p class="availability"><%= almond.availability %></p><br>Almonds, jalapeños, garlic, and grapeseed oil</td>
+                          <td>15</td>
                         </tr>
                         <tr>
                           <td>
@@ -2193,7 +2213,27 @@
                           </tr>
                           <tr>
                             <td>
-                                <strong>Banana Cream Pie </strong><img src="/images/leaf.png" id="leaf"><p class="availability"><%= banana.availability %></p><br>Vanilla custard, sliced bananas, and Graham cracker crust, topped with whipped cream and chocolate drizzle.</td>
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalBanana">
+                                <strong>Banana Cream Pie</strong>
+                              </button>
+                              
+                              <!-- Modal -->
+                              <div class="modal fade" id="modalBanana" tabindex="-1" aria-labelledby="modalLabelBanana" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                      <h4 class="modal-title w-100" id="modalLabelBanana">Banana Cream Pie</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="/images/bananaCreamPie_edited.jpg" id="foodImage" alt="Banana Cream Pie">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <img src="/images/leaf.png" id="leaf"><p class="availability"><%= banana.availability %></p><br>Vanilla custard, sliced bananas, and Graham cracker crust, topped with whipped cream and chocolate drizzle.</td>
                             <td>8</td>
                           </tr>
                           <tr>
@@ -2304,10 +2344,10 @@
                                         <td><strong>Sea Change Prairie Fairy Blackberry Wheat</strong><p class="availability"><%= seach.availability %></p></td>
                                         <td>5%</td>
                                       </tr>
-                                      <tr>
+                                      <!-- <tr>
                                         <td><strong>The Dandy Brewing Company T2G IPA</strong><p class="availability"><%= dandyt2g.availability %></p></td>
                                         <td>7.5%</td>
-                                      </tr>
+                                      </tr> -->
                                       <tr>
                                         <td><strong>Townsquare Forged Amber Rye Ale</strong><p class="availability"><%= town.availability %></p></td>
                                         <td>5.2%</td>
