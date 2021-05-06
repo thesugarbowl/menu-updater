@@ -1642,7 +1642,7 @@
                             </div>
                             
                             <img src="/images/leaf.png" id="leaf"><p class="availability"><%= french.availability %></p><br><%= french.description %></td>
-                          <td><% french.price_reg %></td>
+                          <td><%= french.price_reg %></td>
                         </tr>
                       </tbody>
                   </table>
@@ -1804,7 +1804,7 @@
                             <% if (soup.diet.includes("Vegetarian")) { %> <img src="/images/leaf.png" id="leaf"><% } %>
                             <% if (soup.diet.includes("Vegan")) { %><b style="color:#C63CFF;"> V</b><% } %>
                              <p class="availability"><%= soup.availability %></p><br><%= soup.description %></td>
-                          <td><%= soup.price_reg %></td>
+                          <td><%= soup.price_reg %> / <%= soup.price_large %></td>
                         </tr>
                       </tbody>
                   </table>
@@ -2210,7 +2210,7 @@
                               
                               <!-- Button trigger modal -->
                               <button type="button" class="btn btn-link left-align p-0" data-bs-toggle="modal" data-bs-target="#modalCheesecake">
-                                <strong>Cheesecake Of The Day: <%= cheesecake.description %> Flavour</strong>
+                                <strong>Cheesecake Of The Day: <%= cheesecake.name_feature %> Flavour</strong>
                               </button>
                               
                               <!-- Modal -->
@@ -2479,7 +2479,7 @@
 <div class="text-center">
 
   <!--error reporting-->
-  <p><b>Have feedback about this menu?</b></p>
+  <p><b>Have feedback (technical issues/suggestions) for this Online Menu?</b></p>
 
   <a href='mailto:thesugarbowledmonton@gmail.com'>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact Us</button>
