@@ -37,9 +37,6 @@ router.get('/login-failure', (req, res, next) => {
 // GET menu home page
 router.get('/', item_controller.menu);
 
-// GET menu for main site
-router.get('/mainsite', item_controller.mainsite_get);
-
 // GET request for updating an item
 router.get('/update', isAuth, item_controller.item_update_get);
 
