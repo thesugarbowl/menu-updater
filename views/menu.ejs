@@ -1453,7 +1453,9 @@
                             <% if (brunch_feature.diet.includes("Vegetarian")) { %> <img src="/images/leaf.png" id="leaf"><% } %>
                             <% if (brunch_feature.diet.includes("Vegan")) { %><b style="color:#C63CFF;"> V</b><% } %>
                              <p class="availability"><%= brunch_feature.availability %></p><br><%= brunch_feature.description %></td>
-                          <td><%= brunch_feature.price_reg %></td>
+                          <td><%= brunch_feature.price_reg %>
+                            <% if (brunch_feature.price_large) { %> / <%= brunch_feature.price_large %><% } %>
+                          </td>
                         </tr>
                         <% } %>
                         <tr>
@@ -1843,7 +1845,8 @@
                           <p class='availability'><%= lunch_feature_1.availability %></p><br><%= lunch_feature_1.description %>
                         </td>
                         <td>
-                          <p><%= lunch_feature_1.price_reg %></p>
+                          <%= lunch_feature_1.price_reg %>
+                          <% if (lunch_feature_1.price_large) { %> / <%= lunch_feature_1.price_large %><% } %>
                         </td>
                       </tr>
                       <% } %>
@@ -1857,7 +1860,8 @@
                           <p class='availability'><%= lunch_feature_2.availability %></p><br><%= lunch_feature_2.description %>
                         </td>
                         <td>
-                          <p><%= lunch_feature_2.price_reg %></p>
+                          <%= lunch_feature_2.price_reg %>
+                          <% if (lunch_feature_2.price_large) { %> / <%= lunch_feature_2.price_large %><% } %>
                         </td>
                       </tr>
                       <% } %>
@@ -1871,7 +1875,8 @@
                           <p class='availability'><%= dinner_feature_1.availability %></p><br><%= dinner_feature_1.description %>
                         </td>
                         <td>
-                          <p><%= dinner_feature_1.price_reg %></p>
+                         <%= dinner_feature_1.price_reg %>
+                         <% if (dinner_feature_1.price_large) { %> / <%= dinner_feature_1.price_large %><% } %>
                         </td>
                       </tr>
                       <% } %>
@@ -1885,7 +1890,8 @@
                             <p class='availability'><%= dinner_feature_2.availability %></p><br><%= dinner_feature_2.description %>
                           </td>
                           <td>
-                            <p><%= dinner_feature_2.price_reg %></p>
+                            <%= dinner_feature_2.price_reg %>
+                            <% if (dinner_feature_2.price_large) { %> / <%= dinner_feature_2.price_large %><% } %>
                           </td>
                         </tr>
                         <% } %>
