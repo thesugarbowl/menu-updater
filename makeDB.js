@@ -73,9 +73,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Brauerei Fahr AB Copper', false, 'Beverages', ['Beer/Cider'], '6.50', false, false, 'Turner Valley, AB / 355 mL / 5.3%', false, '', callback);
         // },
-        // function(callback) {
-        //   itemCreate('Collective Arts Apple-Cherry Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
-        // },
+        function(callback) {
+          itemCreate('Collective Arts Blood Orange and Cranberry Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('Collective Arts Apple Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
         // },
@@ -469,9 +469,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Vegan Sausage And Tofu Scramble", false, 'Food', ['Breakfast'], '16', false, false, 'Vegan sausage, tofu, roasted yam, kale, onions, mixed bell peppers, nutritional yeast, and turmeric, with side of Eleanor & Laurent bread', ['Vegan'], '', callback);
         // },
-        function(callback) {
-          itemCreate("French Toast", false, 'Food', ['Breakfast'], '16', false, false, 'Slices of house-made brioche or cinnamon bun with icing sugar, berry compote (blueberry, raspberry, and strawberry), and side crème fraîche', ['Vegetarian'], '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("French Toast", false, 'Food', ['Breakfast'], '16', false, false, 'Slices of house-made brioche or cinnamon bun with icing sugar, berry compote (blueberry, raspberry, and strawberry), and side crème fraîche', ['Vegetarian'], '', callback);
+        // },
         // function(callback) {
         //   itemCreate("The Sugar Griddle", false, 'Food', ['Breakfast', 'Lunch & Dinner'], '10', false, false, 'Half waffle with a fried egg, 2 pieces of Four Whistle Farms back bacon, provolone cheese, and maple butter.', false, '', callback);
         // },
