@@ -30,14 +30,16 @@
                 <input id="last_name" class="form-control" type="text" placeholder="Last Name" name="last_name" required="true" value="<%= typeof wait!='undefined' ? wait.last_name : '' %>">
             </div>
             <div class="form-group">
-                <label for="party_num"><b>Number Of People* (max of 6 per COVID regulations)</b></label>
-                <input id="party_num" class="form-control" type="number" placeholder="e.g. 2" min="1" max="6" name="party_num" required="true" value="<%= typeof wait!='undefined' ? wait.party_num : '' %>">
+                <label for="party_num"><b>Number Of People* (max of 4 per COVID regulations)</b></label>
+                <input id="party_num" class="form-control" type="number" placeholder="e.g. 2" min="1" max="4" name="party_num" required="true" value="<%= typeof wait!='undefined' ? wait.party_num : '' %>">
             </div>
             <div class="form-group">
                 <label for="seating"><b>Seating Preference</b></label>
                 <select id="seating" class="form-control" type="select" placeholder="Select..." name="seating" required="false">
                     <!-- <option value="Indoors">Indoors</option> -->
-                    <option value="Patio">Patio</option>
+                    <option value="Patio (No Preference for Front/Back)">Patio (No Preference for Front/Back)</option>
+                    <option value="Front Patio Only">Front Patio Only</option>
+                    <option value="Back Patio Only">Back Patio Only</option>
                     <!-- <option value="No Preference">No Preference</option> -->
                 </select>
             </div>
@@ -53,7 +55,7 @@
 
         <% if (typeof wait!='undefined') { %>
         <div style="text-align:center;">
-            <a href="<%= wait.urlDetails %>">
+            <a href="<%= wait.urlPosition %>">
                 <button class="btn btn-dark" id="detailbuttons">Cancel</button>
             </a>
         </div>
