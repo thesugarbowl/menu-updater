@@ -191,7 +191,7 @@ exports.wait_create_post = [
     body('last_name').trim().isLength({min:1}).escape().withMessage('Last name or initial is required')
         .withMessage('Last name has non-alphanumeric characters.'),
     body('party_num', 'Number of people required').trim().escape(),
-    body('seating').escape(),
+    body('seating'),
     body('has_cell').escape(),
     body('cell_num', 'Phone number required').trim().escape(),
 
