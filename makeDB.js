@@ -3,7 +3,7 @@
 // IMPORTANT! When creating a new menu item for the database, ensure 'price_reg' is set to '', not false
 // or else price_reg will actually display as 'false' in database & html files. (I have done this below! - Mar 27, 2021)
 
-console.log('This script populates some test wait sessions to your database. Specified database as argument - e.g.: makeDB mongodb+srv://username:password@cluster0.a9azn.mongodb.net/menu-dev?retryWrites=true');
+console.log('This script populates some test wait sessions to your database. Specified database as argument - e.g.: node makeDB mongodb+srv://username:password@cluster0.a9azn.mongodb.net/menu-dev?retryWrites=true');
 
 // Get arguments passed on command line
 var userArgs = process.argv.slice(2);
@@ -74,10 +74,13 @@ function createItems(cb) {
         //   itemCreate('Brauerei Fahr AB Copper', false, 'Beverages', ['Beer/Cider'], '6.50', false, false, 'Turner Valley, AB / 355 mL / 5.3%', false, '', callback);
         // },
         // function(callback) {
-        //   itemCreate('Collective Arts Blood Orange and Cranberry Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
-        // },
-        // function(callback) {
         //   itemCreate('Collective Arts Apple Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
+        // },
+        function(callback) {
+          itemCreate('Collective Arts Apple & Cherry Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
+        }
+        // function(callback) {
+        //   itemCreate('Collective Arts Blood Orange and Cranberry Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
         // },
         // function(callback) {
         //   itemCreate('Revel Cider Prosthetic Conscience', false, 'Beverages', ['Beer/Cider'], '9.25', false, false, '330 mL / 5.5% / Gluten-Free / Niagara, Ontario / Unfiltered pear, hibiscus, brettanomyces. Dry, funky, fruity pear notes infused with tart floral hibiscus. Light red fruit in colour, dry, and wacky. Farmhouse cider.', false, '', callback);
@@ -517,9 +520,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Caesar Salad', false, 'Food', ['Lunch & Dinner'], '5.24', '14', false, 'Romaine lettuce, kale, Parmesan cheese, bread crumbs, garlic caper dressing. Large size comes with side cornbread.', ['Vegetarian'], '', callback);
         // },
-        function(callback) {
-          itemCreate('Baz Mac', false, 'Food', ['Lunch & Dinner'], '18', false, false, 'Two 3 oz. beef smash patties, grill-fried cheese, lettuce, Baz Mac sauce, on house-made brioche bun, with choice of side. ($14 for just the sandwich.)', false, '', callback);
-        },
+        // function(callback) {
+        //   itemCreate('Baz Mac', false, 'Food', ['Lunch & Dinner'], '18', false, false, 'Two 3 oz. beef smash patties, grill-fried cheese, lettuce, Baz Mac sauce, on house-made brioche bun, with choice of side. ($14 for just the sandwich.)', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Lamb Burger', false, 'Food', ['Lunch & Dinner'], '19', false, false, 'Lamb patty, chèvre, caramelized onions, lettuce, tomato, pickles, rosemary mayo, on house-made brioche bun, with choice of side', false, '', callback);
         // },

@@ -24,43 +24,33 @@
     <div class="updateText" style='margin-bottom: 15px;'>
     <p class='lead left-align'><b>Use this form to:</b></p>
     <ol>
-      <li><p>Update Item Availability</p></li>
-      <li><p>Create/Update Featured Items (Beer/Brunch/Lunch/Dinner/Dessert), Soup, and Cheesecake</p></li>
+      <li><p>Update Any Beverage Availability</p></li>
+      <li><p>Create/Update Rotating Feature Beers</p></li>
     </ol>
-    <p class='lead left-align'><b>Complete the steps to choose your item.</b></p>
+    <p class='lead left-align'><b>Complete the steps to choose your Beverage.</b></p>
     </div>
     <br>
 
     <script>
       // default display
-      function buildSubcat() {
-          // selected category
-          var category = d3.select('#category').property('value');
-          // dropdown of subcategories
-          var selectorSubcat = d3.select('#subcategory');
+      // function buildSubcat() {
+      //     // selected category
+      //     var category = d3.select('#category').property('value');
+      //     // dropdown of subcategories
+      //     var selectorSubcat = d3.select('#subcategory');
 
-          var subcatBev_list = ['--Select--', 'Beer/Cider', 'Rotating Feature Beers', 'Wine', 'Spirits', 'Cocktails', 'Specialty Coffees', 'Coffee & Non-Alcoholic'];
-          var subcatFood_list = ['--Select--', 'Breakfast', 'Lunch & Dinner', 'Desserts'];
+      //     var subcatBev_list = ['--Select--', 'Beer/Cider', 'Rotating Feature Beers', 'Wine', 'Spirits', 'Cocktails', 'Specialty Coffees', 'Coffee & Non-Alcoholic'];
 
-          if (category=='Beverages') {
-            selectorSubcat.html('');
-            subcatBev_list.forEach((subcat) => {
-                selectorSubcat
-                    .append("option")
-                    .text(subcat)
-                    .property('value', subcat);
-            });
-          }
-          if (category=='Food') {
-            selectorSubcat.html('');
-            subcatFood_list.forEach((subcat) => {
-                selectorSubcat
-                    .append("option")
-                    .text(subcat)
-                    .property('value', subcat);
-            });
-          }
-      };
+      //     if (category=='Beverages') {
+      //       selectorSubcat.html('');
+      //       subcatBev_list.forEach((subcat) => {
+      //           selectorSubcat
+      //               .append("option")
+      //               .text(subcat)
+      //               .property('value', subcat);
+      //       });
+      //     }
+      // };
 
       function buildName() {
         // selected category
@@ -70,7 +60,7 @@
 
         var nameBeerCider_list = ['Alleykat Aprikat Apricot Ale', 'Analog Hive Bomber Honey Wheat', 'Annex Ale Project Good Authority Golden Ale', //
         'Annex Force Majeure NE IPA', 'Apex Predator Double IPA', 'Blindman Triphammer Porter', 'Brauerei Fahr AB Hefeweizen', 'Brauerei Fahr AB Copper', //
-        'Collective Arts Apple Cider', 'Collective Arts Blood Orange and Cranberry Cider', 'Revel Cider Prosthetic Conscience', 'Revel Sonata Cherry Cider', //
+        'Collective Arts Apple Cider', 'Collective Arts Apple & Cherry Cider', 'Collective Arts Blood Orange and Cranberry Cider', 'Revel Cider Prosthetic Conscience', 'Revel Sonata Cherry Cider', //
         'Sourwood Wabamo Dry Hopped Cider', 'Sourwood Plumbum', 'Sourwood Semitone', 'DDC Aphrodisiaque Strong Stout', //
         'Mongozo GF Pilsner', 'New Level Berserker Blonde', 'Sea Change Prairie Fairy Blackberry Wheat', "SYC Pontification Italian Pilsner", //
         'The Dandy Brewing Company T2G IPA', 'Townsquare Forged Amber Rye Ale', 'Achel Blond', 'Chimay Red', //
@@ -79,8 +69,8 @@
         'Westmalle Tripel'];
 
         var nameFeatureDraft_list = ['Feature Draft #1', 'Feature Draft #2', 'Feature Draft #3', 'Feature Draft #4', //
-        'Feature Draft #5', 'Feature Draft #6', 'Feature Draft #7', 'Feature Draft #8', 'Feature Draft #9', 'Feature Draft #10', 'Feature Bottle/Can #1', 'Feature Bottle/Can #2', 'Feature Bottle/Can #3', 'Feature Bottle/Can #4', //
-        'Feature Bottle/Can #5', 'Feature Bottle/Can #6', 'Feature Bottle/Can #7', 'Feature Bottle/Can #8', 'Feature Bottle/Can #9', 'Feature Bottle/Can #10'];
+        'Feature Draft #5', 'Feature Draft #6', 'Feature Draft #7', 'Feature Draft #8', 'Feature Bottle/Can #1', 'Feature Bottle/Can #2', 'Feature Bottle/Can #3', 'Feature Bottle/Can #4', //
+        'Feature Bottle/Can #5', 'Feature Bottle/Can #6', 'Feature Bottle/Can #7', 'Feature Bottle/Can #8'];
 
         var nameWine_list = ["Clos du Soleil Célestiale . Meritage '16", "Clos du Soleil Capella . White Meritage '18", //
         "Lapis Luna . Zinfandel '19", "Lapis Luna . Chardonnay '18", "Wild Goose . Gewürtztraminer '18", //
@@ -107,14 +97,6 @@
         "S.Pellegrino Sparkling Mineral Water: 750 mL", "Annex: Root Beer", "Annex: Saskatoon Lemonade", //
         "New Level Painapple Punch Craft Soda", "Royal Jamaican Ginger Beer", "Stiegl Freibier Non-Alcoholic", //
         "Fancy Tonic"];
-
-        var nameBreakfast_list = ['The Sugar Griddle', 'Chicken Waffle Sandwich', 'Brunch Feature', 'Breakfast Sandwich', 'Burrito', 'Chicken And Waffles', 'Cinnamon Bun', //
-        'French Toast', 'Huevos Rancheros', 'Omelette', 'Sugarbowl Benny', 'Vegan Sausage Tofu Scramble'];
-        var nameLunchDinner_list = ['The Sugar Griddle', 'Chicken Waffle Sandwich', 'Chicken Salad Sandwich', 'The Heady Vegetarian Sandwich', 'Lunch Feature #1', 'Lunch Feature #2', 'Dinner Feature #1', 'Dinner Feature #2', 'Almond Spread With Pita Bread', 'Baz Mac', 'Beef Burger', 'Bison Chili', //
-        'Caesar Salad', 'Chicken And Waffles', 'Chicken Curry Stew', 'Jerk Chicken Sandwich', 'Lamb Burger', "Mac' And Cheese", //
-        'Pommes Frites', 'Pulled Pork Sandwich', 'Smoked Paprika Popcorn', 'Soup Of The Day', 'Veggie Burger', //
-        'Yam Fries'];
-        var nameDesserts_list = ['Dessert Feature', 'Banana Cream Pie', 'Cheesecake Of The Day', 'Cinnamon Bun'];
 
         if (subcategory=='Beer/Cider') {
             selectorName.html('');
@@ -179,51 +161,31 @@
                     .property('value', name);
             });
         }
-        if (subcategory=='Breakfast') {
-            selectorName.html('');
-            nameBreakfast_list.forEach((name) => {
-                selectorName
-                    .append("option")
-                    .text(name)
-                    .property('value', name);
-            });
-          }
-        if (subcategory=='Lunch & Dinner') {
-          selectorName.html('');
-          nameLunchDinner_list.forEach((name) => {
-              selectorName
-                  .append("option")
-                  .text(name)
-                  .property('value', name);
-          });
-        }
-        if (subcategory=='Desserts') {
-            selectorName.html('');
-            nameDesserts_list.forEach((name) => {
-                selectorName
-                    .append("option")
-                    .text(name)
-                    .property('value', name);
-            });
-          }
       };
     </script>
 
     <form method='POST' action=''>
         <div class='form-group'>
-            <label for='category'><h5>Step 1: Category</h5></label>
-            <select class='form-control' id='category' name='category' onchange='buildSubcat(this.value)'>
-              <option value=''>--Select--</option>
-              <option value='Beverages'>Beverages</option>
-              <option value='Food'>Food</option>
+            <label for='category'><h5>Category</h5></label>
+            <select class='form-control' id='category' name='category'>
+              <option value='Beverages' selected>Beverages</option>
             </select>
           </div>
         <div class='form-group'>
-            <label for='subcategory'><h5>Step 2: Subcategory</h5></label>
-            <select class='form-control' id='subcategory' name='subcategory' onchange='buildName(this.value)'></select>
+            <label for='subcategory'><h5>Step 1: Subcategory</h5></label>
+            <select class='form-control' id='subcategory' name='subcategory' onchange='buildName(this.value)'>
+              <option value='' selected>--Select--</option>
+              <option value='Beer/Cider'>Beer/Cider</option>
+              <option value='Rotating Feature Beers'>Rotating Feature Beers</option>
+              <option value='Wine'>Wine</option>
+              <option value='Spirits'>Spirits</option>
+              <option value='Cocktails'>Cocktails</option>
+              <option value='Specialty Coffees'>Specialty Coffees</option>
+              <option value='Coffee & Non-Alcoholic'>Coffee & Non-Alcoholic</option>
+            </select>
         </div>
         <div class="form-group" style='margin-bottom: 20px;'>
-          <label for="name"><h5>Step 3: Item Name</h5><p><i> 
+          <label for="name"><h5>Step 2: Item Name</h5><p><i> 
             <ul>
               <li>Click the field to see the list.</li>
               <li>Rotating Feature Beers are numbered 1-8 from top-to-bottom of the chalkboard.</li>
@@ -231,17 +193,17 @@
           </i></p></label>
           <select class="form-control" id="name" name="name" required='true'></select>
         </div>
-        <div class='form-group' style='text-align: center; margin-bottom: 10px;'>
+        <div class='form-group' style='text-align: center'>
         <button class='btn btn-primary' id='btn_submit' type='submit' style="width:100px;">Submit</button>
         </div>
       </form>
-      <hr>
+      <!-- <hr>
       <br>
       <h5 style="margin-bottom:10px;">To make <b>Breakfast & Brunch Unavailable</b></h5>
       <a id="update-menu-button" class='btn btn-danger' href='/menu/breakfastunavailable' role='button'>Click Here</a>
       <div style="margin-bottom: 40px;"></div>
       <h5 style="margin-bottom:10px;">To make <b>All Food Items Available</b></h4>
-      <a id="update-menu-button" class='btn btn-success inlineButton' href='/menu/allavailable' role='button'>Click Here</a>
+      <a id="update-menu-button" class='btn btn-success inlineButton' href='/menu/allavailable' role='button'>Click Here</a> -->
       <div style="margin-bottom: 65px;"></div>
     </div>
     <!--d3 js-->
