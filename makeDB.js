@@ -76,9 +76,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Collective Arts Apple Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
         // },
-        function(callback) {
-          itemCreate('Collective Arts Apple & Cherry Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('Collective Arts Apple & Cherry Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Collective Arts Blood Orange and Cranberry Cider', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Ontario / 473 mL / 5.8%', false, '', callback);
         // },
@@ -448,6 +448,12 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Fancy Tonic", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, false, false, '', callback);
         // },
+        function(callback) {
+          itemCreate("Fever-Tree Sicilian Lemonade", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, '200 mL Bottle', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Fever-Tree Ginger Beer", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, '200 mL Bottle', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("Cinnamon Bun", false, 'Food', ['Breakfast','Desserts'], '5', false, false, 'Baked daily', ['Vegetarian'], '', callback);
         // },
