@@ -286,7 +286,7 @@ exports.wait_create_post_guest = [
     body('last_name').trim().isLength({min:1}).escape().withMessage('Last name or initial is required')
         .withMessage('Last name has non-alphanumeric characters.'),
     body('party_num', 'Number of people required').trim().escape(),
-    body('seating').escape(),
+    body('seating'),
     body('cell_num', 'Phone number required').trim().escape(),
 
     // Process request after validation and sanitization
@@ -438,7 +438,7 @@ exports.wait_update_post = [
     body('first_name').trim().isLength({min:1}).escape().withMessage('First name required.'),
     body('last_name').trim().isLength({min:1}).escape().withMessage('Last name or initial is required'),
     body('party_num', 'Number of people required').trim().escape(),
-    body('seating').escape(),
+    body('seating'),
     body('cell_num', 'Phone number required').trim().escape(),
 
     // Process request after validation and sanitization
@@ -496,7 +496,7 @@ exports.wait_update_post_guest = [
     body('first_name').trim().isLength({min:1}).escape().withMessage('First name required.'),
     body('last_name').trim().isLength({min:1}).escape().withMessage('Last name or initial is required'),
     body('party_num', 'Number of people required').trim().escape(),
-    body('seating').escape(),
+    body('seating'),
     body('cell_num', 'Phone number required').trim().escape(),
 
     // Process request after validation and sanitization
