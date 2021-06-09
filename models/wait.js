@@ -9,7 +9,7 @@ var WaitSchema = new Schema(
         party_num: {type: Number, min: 1, required: [true, 'Number of people required']},
         seating: {
             type: String,
-            default: 'Patio (No Preference for Front or Back)'
+            default: 'No Preference'
         },
         has_cell: {
             type: String
