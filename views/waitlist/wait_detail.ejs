@@ -32,7 +32,7 @@
                 <li class="nav-item" id="link-text">
                     <a class="nav-link" href="/waitlist/sessions/confirmed">Confirmed</a>
                 </li>
-                <li class="nav-item active" id="link-text">
+                <li class="nav-item" id="link-text">
                     <a class="nav-link" href="/waitlist/sessions/archived">Archived</a>
                 </li>
                 <li class="nav-item" id="link-text">
@@ -87,10 +87,10 @@
         <% if (typeof wait.wait_end!='undefined') { %>
         <p><b>First Notification: </b><%= wait.waitEnd_localTime %></p>
         <p><b># Of Times Notified: </b><%= wait.notify_total %></p>
+        <% } %>
         <p><b>Number Of People: </b><%= wait.party_num %></p>
         <p><b>Seating Preference: </b><%= wait.seating %></p>
         <p><b>Cell Number: </b><%= wait.cell_num %></p>
-        <% } %>
         <br>
         <hr>
         <form method='POST' action='' style="margin-bottom:20px;">
