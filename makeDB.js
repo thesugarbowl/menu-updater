@@ -412,6 +412,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Pop: Ginger Ale", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, false, false, '', callback);
         // },
+        function(callback) {
+          itemCreate("Pop: Cran-Soda", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, false, false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("S.Pellegrino: Blood Orange", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
         // },
@@ -448,12 +451,12 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Fancy Tonic", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, false, false, '', callback);
         // },
-        function(callback) {
-          itemCreate("Fever-Tree Sicilian Lemonade", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, '200 mL Bottle', false, '', callback);
-        },
-        function(callback) {
-          itemCreate("Fever-Tree Ginger Beer", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, '200 mL Bottle', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("Fever-Tree Sicilian Lemonade", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, '200 mL Bottle', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("Fever-Tree Ginger Beer", false, 'Beverages', ['Coffee & Non-Alcoholic'], '4', false, false, '200 mL Bottle', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate("Cinnamon Bun", false, 'Food', ['Breakfast','Desserts'], '5', false, false, 'Baked daily', ['Vegetarian'], '', callback);
         // },
