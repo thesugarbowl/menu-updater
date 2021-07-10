@@ -24,11 +24,11 @@ async function main() {
 
         // UPDATE
         // Print the Infinite Views listing
-        await findItemByName(client, "Burrito");
+        await findItemByName(client, "Lapis Luna . Chardonnay '18");
         // // Update the Infinite Views listing to have 6 bedrooms and 8 beds
-        await updateItemByName(client, "Burrito", { subcategory: ['Breakfast'] });
+        await updateItemByName(client, "Lapis Luna . Chardonnay '18", { price_reg: '11' });
         // // Print the updated Infinite Views listing
-        await findItemByName(client, "Burrito");
+        await findItemByName(client, "Lapis Luna . Chardonnay '18");
 
     } finally {
         // Close the connection to the MongoDB cluster

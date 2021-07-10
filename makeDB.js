@@ -3,7 +3,7 @@
 // IMPORTANT! When creating a new menu item for the database, ensure 'price_reg' is set to '', not false
 // or else price_reg will actually display as 'false' in database & html files. (I have done this below! - Mar 27, 2021)
 
-console.log('This script populates some test wait sessions to your database. Specified database as argument - e.g.: node makeDB mongodb+srv://username:password@cluster0.a9azn.mongodb.net/menu-dev?retryWrites=true');
+console.log('This script populates some test wait sessions to your database. Specified database as argument - e.g.: node makeDB "mongodb+srv://username:password@cluster0.a9azn.mongodb.net/menu-dev?retryWrites=true" ');
 
 // Get arguments passed on command line
 var userArgs = process.argv.slice(2);
@@ -119,6 +119,9 @@ function createItems(cb) {
         //   itemCreate('Townsquare Forged Amber Rye Ale', false, 'Beverages', ['Beer/Cider'], '8.25', false, false, 'Edmonton / 473 mL / 5.2%', false, '', callback);
         // },
         // function(callback) {
+        //   itemCreate('Troubled Monk Open Road American Brown Ale', false, 'Beverages', ['Beer/Cider'], '7', false, false, 'Edmonton / 355 mL / 5%', false, '', callback);
+        // },
+        // function(callback) {
         //   itemCreate('Achel Blond', false, 'Beverages', ['Beer/Cider'], '11', false, false, '330 mL / 8%', false, '', callback);
         // },
         // function(callback) {
@@ -149,10 +152,16 @@ function createItems(cb) {
         //   itemCreate('Orval Trappist Ale', false, 'Beverages', ['Beer/Cider'], '13', false, false, '6.9%', false, '', callback);
         // }
         // function(callback) {
+        //   itemCreate('Oud Beersel Kriek', false, 'Beverages', ['Beer/Cider'], '13', false, false, '375 mL / 4%', false, '', callback);
+        // },
+        // function(callback) {
         //   itemCreate('Rochefort 6', false, 'Beverages', ['Beer/Cider'], '11', false, false, '330 mL / 7.5%', false, '', callback);
         // },
         // function(callback) {
         //   itemCreate('Rochefort 8', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / 9.2%', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate('Tripel Karmeliet Golden Belgian', false, 'Beverages', ['Beer/Cider'], '12', false, false, '330 mL / 8.4%', false, '', callback);
         // },
         // function(callback) {
         //   itemCreate('Westmalle Dubbel', false, 'Beverages', ['Beer/Cider'], '11', false, false, '330 mL / 7%', false, '', callback);
@@ -230,8 +239,11 @@ function createItems(cb) {
         //   itemCreate("Lapis Luna . Zinfandel '19", false, 'Beverages', ['Wine'], '10', '14', '38', 'California', false, '', callback);
         // },
         // function(callback) {
-        //   itemCreate("Lapis Luna . Chardonnay '18", false, 'Beverages', ['Wine'], '10', '14', '38', 'California', false, '', callback);
+        //   itemCreate("Lapis Luna . Pinot Noir '19", false, 'Beverages', ['Wine'], '11', '14', '38', 'California', false, '', callback);
         // },
+        function(callback) {
+          itemCreate("Lapis Luna . Chardonnay '18", false, 'Beverages', ['Wine'], '11', '14', '38', 'California', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("Wild Goose . Gewürtztraminer '18", false, 'Beverages', ['Wine'], '11', '15', '40', 'Okanagan Valley, BC', false, '', callback);
         // },
@@ -412,9 +424,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Pop: Ginger Ale", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, false, false, '', callback);
         // },
-        function(callback) {
-          itemCreate("Pop: Cran-Soda", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, false, false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("Pop: Cran-Soda", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, false, false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate("S.Pellegrino: Blood Orange", false, 'Beverages', ['Coffee & Non-Alcoholic'], '3', false, false, '330 mL Can', false, '', callback);
         // },
