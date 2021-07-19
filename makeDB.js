@@ -109,6 +109,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Sea Change Prairie Fairy Blackberry Wheat', false, 'Beverages', ['Beer/Cider'], '8.75', false, false, 'Edmonton / 473 mL / 5%', false, '', callback);
         // },
+        function(callback) {
+          itemCreate('Annex Idle Hands Italian Pilsner', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 5.3%', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('SYC Pontification Italian Pilsner', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Edmonton / 473 mL / 4.9%', false, '', callback);
         // },
@@ -241,9 +244,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Lapis Luna . Pinot Noir '19", false, 'Beverages', ['Wine'], '11', '14', '38', 'California', false, '', callback);
         // },
-        function(callback) {
-          itemCreate("Lapis Luna . Chardonnay '18", false, 'Beverages', ['Wine'], '11', '14', '38', 'California', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("Lapis Luna . Chardonnay '18", false, 'Beverages', ['Wine'], '11', '14', '38', 'California', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate("Wild Goose . Gewürtztraminer '18", false, 'Beverages', ['Wine'], '11', '15', '40', 'Okanagan Valley, BC', false, '', callback);
         // },
