@@ -109,9 +109,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Sea Change Prairie Fairy Blackberry Wheat', false, 'Beverages', ['Beer/Cider'], '8.75', false, false, 'Edmonton / 473 mL / 5%', false, '', callback);
         // },
-        function(callback) {
-          itemCreate('Annex Idle Hands Italian Pilsner', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 5.3%', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('Annex Idle Hands Italian Pilsner', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Calgary / 473 mL / 5.3%', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('SYC Pontification Italian Pilsner', false, 'Beverages', ['Beer/Cider'], '9', false, false, 'Edmonton / 473 mL / 4.9%', false, '', callback);
         // },
@@ -382,6 +382,21 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Old-Fashioned", false, 'Beverages', ['Cocktails'], '14', false, false, false, false, '', callback);
         // },
+        function(callback) {
+          itemCreate("Ti' Punch!", false, 'Beverages', ['Cocktails'], '14', false, false, '2 oz / Giffard Cachaca, Lime, Hibiscus Berry Tea Syrup, Bitters', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Discotheque", false, 'Beverages', ['Cocktails'], '16', false, false, '2.5 oz / AQUA LVCE Gin, Orgeat, Lime, Pineapple', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Peach Pit", false, 'Beverages', ['Cocktails'], '14', false, false, '4 oz / Martini Bianco, Lillet, Peach Brandy, Cava, Citrus, Aperol Float, Soda', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Cold Brew Spritz", false, 'Beverages', ['Cocktails'], '13', false, false, "3 oz / Kaffa Cold Brew, Peychaud's Aperitivo, Sweet Vermouth, Tonic, Citrus", false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Penicillin", false, 'Beverages', ['Cocktails'], '14', false, false, '2 oz / Peaty Scotch, Abricot du Rousillon, Honey, Ginger, White Tea, Chamomile, Lemon', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("B52", false, 'Beverages', ['Specialty Coffees'], '8', '12', false, 'Kahlua, Grand Marnier, Baileys', false, '', callback);
         // },
