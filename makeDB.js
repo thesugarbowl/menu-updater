@@ -154,6 +154,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Orval Trappist Ale', false, 'Beverages', ['Beer/Cider'], '13', false, false, '6.9%', false, '', callback);
         // }
+        function(callback) {
+          itemCreate('Lindemans Oude Kriek Cuvée René 2019', false, 'Beverages', ['Beer/Cider'], '13', false, false, '375 mL / 7%', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate('Oud Beersel Kriek', false, 'Beverages', ['Beer/Cider'], '13', false, false, '375 mL / 4%', false, '', callback);
         // },
@@ -382,21 +385,21 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Old-Fashioned", false, 'Beverages', ['Cocktails'], '14', false, false, false, false, '', callback);
         // },
-        function(callback) {
-          itemCreate("Ti' Punch!", false, 'Beverages', ['Cocktails'], '14', false, false, '2 oz / Giffard Cachaca, Lime, Hibiscus Berry Tea Syrup, Bitters', false, '', callback);
-        },
-        function(callback) {
-          itemCreate("Discotheque", false, 'Beverages', ['Cocktails'], '16', false, false, '2.5 oz / AQUA LVCE Gin, Orgeat, Lime, Pineapple', false, '', callback);
-        },
-        function(callback) {
-          itemCreate("Peach Pit", false, 'Beverages', ['Cocktails'], '14', false, false, '4 oz / Martini Bianco, Lillet, Peach Brandy, Cava, Citrus, Aperol Float, Soda', false, '', callback);
-        },
-        function(callback) {
-          itemCreate("Cold Brew Spritz", false, 'Beverages', ['Cocktails'], '13', false, false, "3 oz / Kaffa Cold Brew, Peychaud's Aperitivo, Sweet Vermouth, Tonic, Citrus", false, '', callback);
-        },
-        function(callback) {
-          itemCreate("Penicillin", false, 'Beverages', ['Cocktails'], '14', false, false, '2 oz / Peaty Scotch, Abricot du Rousillon, Honey, Ginger, White Tea, Chamomile, Lemon', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate("Ti' Punch!", false, 'Beverages', ['Cocktails'], '14', false, false, '2 oz / Giffard Cachaca, Lime, Hibiscus Berry Tea Syrup, Bitters', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("Discotheque", false, 'Beverages', ['Cocktails'], '16', false, false, '2.5 oz / AQUA LVCE Gin, Orgeat, Lime, Pineapple', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("Peach Pit", false, 'Beverages', ['Cocktails'], '14', false, false, '4 oz / Martini Bianco, Lillet, Peach Brandy, Cava, Citrus, Aperol Float, Soda', false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("Cold Brew Spritz", false, 'Beverages', ['Cocktails'], '13', false, false, "3 oz / Kaffa Cold Brew, Peychaud's Aperitivo, Sweet Vermouth, Tonic, Citrus", false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("Penicillin", false, 'Beverages', ['Cocktails'], '14', false, false, '2 oz / Peaty Scotch, Abricot du Rousillon, Honey, Ginger, White Tea, Chamomile, Lemon', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate("B52", false, 'Beverages', ['Specialty Coffees'], '8', '12', false, 'Kahlua, Grand Marnier, Baileys', false, '', callback);
         // },
@@ -468,6 +471,9 @@ function createItems(cb) {
         // },
         // function(callback) {
         //   itemCreate("Annex: Saskatoon Lemonade", false, 'Beverages', ['Coffee & Non-Alcoholic'], '5', false, false, false, false, '', callback);
+        // },
+        // function(callback) {
+        //   itemCreate("New Level Craft Soda Mocktail Mulekicker", false, 'Beverages', ['Coffee & Non-Alcoholic'], '6', false, false, false, false, '', callback);
         // },
         // function(callback) {
         //   itemCreate("New Level Painapple Punch Craft Soda", false, 'Beverages', ['Coffee & Non-Alcoholic'], '6', false, false, false, false, '', callback);
