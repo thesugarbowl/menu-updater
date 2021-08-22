@@ -154,9 +154,9 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate('Orval Trappist Ale', false, 'Beverages', ['Beer/Cider'], '13', false, false, '6.9%', false, '', callback);
         // }
-        function(callback) {
-          itemCreate('Lindemans Oude Kriek Cuvée René 2019', false, 'Beverages', ['Beer/Cider'], '13', false, false, '375 mL / 7%', false, '', callback);
-        }
+        // function(callback) {
+        //   itemCreate('Lindemans Oude Kriek Cuvée René 2019', false, 'Beverages', ['Beer/Cider'], '13', false, false, '375 mL / 7%', false, '', callback);
+        // },
         // function(callback) {
         //   itemCreate('Oud Beersel Kriek', false, 'Beverages', ['Beer/Cider'], '13', false, false, '375 mL / 4%', false, '', callback);
         // },
@@ -481,6 +481,18 @@ function createItems(cb) {
         // function(callback) {
         //   itemCreate("Royal Jamaican Ginger Beer", false, 'Beverages', ['Coffee & Non-Alcoholic'], '5', false, false, false, false, '', callback);
         // },
+        function(callback) {
+          itemCreate("Garage Kombucha: Peach", false, 'Beverages', ['Coffee & Non-Alcoholic'], '6.25', false, false, '500 mL', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Garage Kombucha: Passion Fruit", false, 'Beverages', ['Coffee & Non-Alcoholic'], '6.25', false, false, '500 mL', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Garage Kombucha: Raspberry", false, 'Beverages', ['Coffee & Non-Alcoholic'], '6.25', false, false, '500 mL', false, '', callback);
+        },
+        function(callback) {
+          itemCreate("Garage Kombucha: Mango", false, 'Beverages', ['Coffee & Non-Alcoholic'], '6.25', false, false, '500 mL', false, '', callback);
+        }
         // function(callback) {
         //   itemCreate("Stiegl Freibier Non-Alcoholic", false, 'Beverages', ['Coffee & Non-Alcoholic'], '6', false, false, false, false, '', callback);
         // },
